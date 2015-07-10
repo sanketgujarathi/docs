@@ -1,0 +1,483 @@
+Best practices
+http://gordondickens.com/wordpress/2012/07/03/enterprise-spring-best-practices-part-1-project-config/
+Project structure
+http://cs.lmu.edu/~ray/notes/largejavaapps/
+cs.lmu.edu/~ray/notes/jw/
+
+Best java websites and blogs
+http://www.baeldung.com/java-blogs
+
+http://www.xyzws.com/javafaq/page/1
+http://javaconceptoftheday.com/
+
+
+Sample code for everything in java
+http://www.java2s.com/Code/Java/Spring/CatalogSpring.htm
+
+Maven
+http://www.javahotchocolate.com/notes/maven.html
+
+Sample MVC application
+http://www.journaldev.com/2552/spring-restful-web-service-example-with-json-jackson-and-client-program
+http://www.javacodegeeks.com/2014/03/building-java-web-application-using-hibernate-with-spring.html
+
+Persistence with hibernate and Spring
+http://www.baeldung.com/persistence-with-spring-series/
+
+How annotation based bean config works illustration
+http://stackoverflow.com/questions/7414794/difference-between-contextannotation-config-vs-contextcomponent-scan
+
+GOF pattern
+http://geekswithblogs.net/subodhnpushpak/archive/2009/09/18/the-23-gang-of-four-design-patterns-.-revisited.aspx
+http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns?rq=1
+http://www.briandupreez.net/2010/11/design-patterns-in-jdk.html
+http://k2java.blogspot.com/2011/03/decorator-vs-adapter-pattern.html
+
+Drools
+http://www.ayobamiadewole.com/Blog/Business-Rules-Management-in-Java-with-Drools
+
+blogs	
+http://dandreamsofcoding.com/2015/01/05/java-quirks-and-interview-gotchas/
+https://www.voxxed.com/blog/2015/01/not-fathers-java-opinionated-guide-modern-java-development-part-1/
+
+Spring JDBCTemplate - 
+http://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/jdbc.html
+
+JAXB - 
+http://www.vogella.com/tutorials/JAXB/article.html
+
+Volatile -
+http://www.javamex.com/tutorials/synchronization_volatile.shtml
+
+JPA 101-
+http://openejb.apache.org/jpa-concepts.html
+
+Garbage collection - 
+http://www.cubrid.org/blog/dev-platform/understanding-java-garbage-collection/
+
+Annotations - 
+https://deors.wordpress.com/2011/09/26/annotation-types/
+
+Creational Patterns -
+Builder - Build the object step-by-step, return same instance in every step. 
+			StringBuilder/StringBuffer, using the append() method, is an example of BuilderPattern. URI builder
+Factory -  Provides method that return an implementation of an abstract/interface type. 
+			Calendar.getInstance(),SessionFactory.openSession(), Spring beanfactory is an example of Factory pattern
+AbstractFactory - Provides method that return the factory itself which in turn can be used to create another abstract/interface type.
+			Hibernate "new Configuration().configure().buildSessionFactory()" is an example of AbstractFactory pattern(Factory of factoryclasses)
+Singleton - Provides a method that always returns the same instance of the class. 
+			Runtime is an example of Singleton class
+Prototype - Provides a method that returns different instance with the same properties. 
+			Object.clone() is an example of Prototype pattern(Object return copy of itself and modify accordingly)
+
+Behavioural Pattern - 
+Iterator pattern - sequentially traverse through objects of same type and return them one by one. Iterator on collections
+Strategy pattern - 
+
+Structural Patterns -
+Flyweight - Share data/returning a cached instance to save memory. string pool/Wrapper classes is example of Flyweight pattern.
+decorator - take instance of same type and add additional behaviour. Response object class created from model class with added information of jaxb for marshalling
+adapter  - take instance of another abstract/interface and acts as a convertor i.e. provides a new interface for an incompatible client.
+proxy - AOP, reflection
+facade - 
+composite - 
+bridge - 
+
+
+
+Data structure
+https://ece.uwaterloo.ca/~dwharder/aads/
+
+damn cool algorithms
+http://blog.notdot.net/tag/damn-cool-algorithms
+
+
+fizzbuzz
+tower of hanoi
+shell
+radix
+
+UNIX 
+http://www.grymoire.com/Unix/
+
+
+Interview Questions
+
+why interface variables are public static final? 
+final - to force initialization, since no constructor. Any implementations can change value of fields if they are not defined as final. Then they would become a part of the implementation.
+static since can't be instance hence all variables need to be shared. 
+public - private makes no sense no instance and no instance methods etc. 
+
+package java.util. Date,calendar, collection classes
+
+package java.lang String,StringBuffer,StringBuilder, Object
+
+Class java.lang.Object
+
+Comparator - older, more common interface, can be used to define only one way of sorting 
+
+Comparable -newer interface, used to define various sorting parameters, 3rd party/legacy classes, can avoid null pointer issues
+
+When does ConcurrentModificationException occur, how to avoid?Occurs when size changes. use iterator.remove() or ConcurrentHashMap and CopyOnWriteArrayList classes.
+
+What is IdentityHashMap? Uses == instead of .equals() 
+
+autoboxing/unboxing - autoconversion provided by java between primitive types and their wrapper classes. Wrapper classes are required for using in collections and using with generics. Disadv - primitives  are lightweight as compared to wrapper classes.
+
+Marker interface - serializable, clonable
+
+how do you ensure that you are deserializing only serialize able class ? -using instance of
+
+difference between application server and webserver
+
+how to make singleton class (inner class method is simple easy to understand method doesn't require synchronization )
+
+why framework? - provides certain common functionalities that would be required to build enterprise application. Provides already tested code.
+
+How does java facilitate loose coupling and tight cohesion? loose coupling - abstraction, tight cohesion - encapuslation, access specifiers
+
+Difference between abstraction and composition?
+
+Hierarchy of exceptions?
+
+How does class loader work? When does noclassdeferror occur? Not present in classpath or exception thrown during static initialization
+ClassNotFoundException comes when JVM tries to load a class at runtime dynamically means you give the name of class at runtime and then JVM tries to load it and if that class is not found in classpath it throws java.lang.ClassNotFoundException. While in case of NoClassDefFoundError the problematic class was present during Compile time and that's why program was successfully compile but not available during runtime by any reason
+Soln -  Verify that all required Java classes are included in the application’s classpath. The most common mistake is not to include all the necessary classes, before starting to execute a Java application that has dependencies on some external libraries. The classpath of the application is correct, but the Classpath environment variable is overridden before the application’s execution. Verify that the aforementioned ExceptionInInitializerError does not appear in the stack trace of your application.
+
+Read more: http://javarevisited.blogspot.com/2011/06/noclassdeffounderror-exception-in.html#ixzz3RtZ1Xx6L
+
+
+Instance Variables: These variables are serialized, so while deserialization we will get back the serialized state.
+
+Static Variables: These variables are not serialized, So while deserialization static variable value will loaded from the class.(Current value will be loaded.)
+
+transient Variables: transient variables are not serialized, so while deserialization those variables will be initialized with corresponding default values (ex: for objects null, int 0).
+
+Super class variables: If super class also implemented Serializable interface then those variables will be serialized, otherwise it won't serialize the super class variables. and while deserializing, JVM will run default constructor in super class and populates the default values. Same thing will happen for all superclasses.
+
+transient with static - does not affect since both are not persisted anyways
+transient with final - not a compilation error, but problem arises while deserialization since value cannot be assigned to final variable.
+serializing singleton - implement readObject and return the same instance to avoid breaking singleton pattern.
+
+primitive types are more specific as compared to wrapper classes for overloading.
+String pool -
+stored in heap, before java 7 stored in perm gen
+http://www.xyzws.com/javafaq/what-is-string-literal-pool/3
+To force string pooling on string object use "string".intern()
+String e = "Test";
+String f = new String("Test").intern();
+// comparing the Strings as objects & not the value
+System.out.println(e==f);//true
+
+Example of static inner class - Used for creating a Rowmapper for using with spring jdbc template.
+
+***Threading***
+ThreadLocal - Each thread has its own copy. Static, final (Not mandatory, but recommended). Usually used with Singleton beans.
+
+Deadlocks
+- When two threads call Thread.join() on each other.
+- When two threads use nested synchronised blocks to lock two objects and the blocks lock the same objects in different order
+
+***Spring***
+any adv/disadvantage of using xml based spring config over annotation - annotations are simpler as compared to the more tedious xml config, convenient to use because of autowiring, present in the class itself so more visibility(about which members are injected externally) for developer, wiring can be done while creating class itself so less chances of missing out on wiring any member. Disadv -  annotations cannot be used for third party classes (classes from a jar),
+
+Role of spring framework apart from DI - 
+It also manages lifecycle of beans. Spring IoC you can configure the number of instances of the component – whether the component is a singleton or not – and at what point the component is created and destroyed in memory.
+
+how does aop work
+
+what type of ioc have you used? adv disadvantage of constructor and setter injections
+
+What is autowiring?
+
+why not to use autowiring used? How to enable autowiring. - In case of big projects while debugging some complex issues then all information present in one place in configuration files, actually helps a lot. Autowiring makes debugging harder since it is less obvious.
+
+What are design patterns used in spring? Factory pattern in beanfactory, proxy pattern used in AOP	
+
+Which modules / special feature of Spring framework used? dependency injection, AOP, transaction management, custom annotation
+
+how would you write junits
+
+which collection types used? List(for collection of objects), maps( when only one object from the collection would be required) and sets ( multiple occurences of objects could occur hence used sets to keep collection unique)
+
+what is mvc
+
+Reason for soap over rest?
+SOAP - SOAP relies on XML (Extensible Markup Language) in three ways; 
+the Envelope – that defines what is in the message and how to process it, a set of encoding rules for datatypes, and finally the layout of the procedure calls and responses gathered. 
+This envelope is sent via a transport (HTTP/HTTPS), and an RPC (Remote Procedure Call) is executed and the envelope is returned with information in a XML formatted document.
+
+-Formal contracts
+-Stateful. SOAP requires less plumbing code than REST services design, (i.e., transactions, security, coordination, addressing, trust, etc.) Most real-world applications are not simple and support complex operations, which require conversational state and contextual information to be maintained. 
+-SOAP Web services (such as JAX-WS) are useful in handling asynchronous processing and invocation.
+
+
+Reason for rest over soap?
+REST approach - which uses a standard URI (Uniform Resource Identifier) that makes a call to a web service.
+The approach is very simple to understand and can be executed on really any client or server that has HTTP/HTTPS support.
+-Limited bandwidth and resources since it is lightweight, doesn't require rich clients that need to consume wsdls
+-stateless
+-can use XML or JSON, which is lightweight as compared to XML
+-since stateless, caching is easier
+-the ease of development, use of the existing web infrastructure, and little learning overhead 
+
+**
+PATCH v/s PUT
+The difference between the PUT and PATCH requests is reflected in the way the server processes the enclosed entity to modify the resource identified by the Request-URI. In a PUT request, the enclosed entity is considered to be a modified version of the resource stored on the origin server, and the client is requesting that the stored version be replaced. With PATCH, however, the enclosed entity contains a set of instructions describing how a resource currently residing on the origin server should be modified to produce a new version. The PATCH method affects the resource identified by the Request-URI, and it also MAY have side effects on other resources; i.e., new resources may be created, or existing ones modified, by the application of a PATCH.
+
+When to use and when not to use DI? 
+Use DI for decoupling logic like DAO implementation, otherwise use new operator
+
+Team size? How is the work assigned? 
+
+What automation used in SDLC lifecyle?
+
+Improve performance?
+
+Short term goals?
+
+Any achievements?
+Appreciation from client for the way demo and test evidences were presented.
+Appreciation for the analysis work to improve performance of ES component.
+
+What are the design patters used in project?
+Factory pattern - Multiple implementations of an abstract class present. Factory class return appropriate implementation depending on the message type given as input.
+Decorator pattern - Decorator class created from model class with added information of marshalling
+Adapter pattern - Bankapi provided a unified interface for number of underlying web services that provided various core banking functionalities
+
+What is your role?
+1. Design - what artifacts used?
+2. Configuration of project - ?
+3. Testing
+4. Deployment
+
+Tools?
+
+***Hibernate***
+hibernate transactions
+
+How is Proxy used in Hibernate?
+
+Object persistence in Hibernate
+
+╔══════════════╦═══════════════════════════════╦════════════════════════════════╗
+║    METHOD    ║            TRANSIENT          ║            DETACHED            ║
+╠══════════════╬═══════════════════════════════╬════════════════════════════════╣
+║              ║       sets id if doesn't      ║   sets new id even if object   ║
+║    save()    ║     exist, persists to db,    ║    already has it, persists    ║
+║              ║    returns attached object    ║ to DB, returns attached object ║
+╠══════════════╬═══════════════════════════════╬════════════════════════════════╣
+║              ║       sets id on object       ║             throws             ║
+║   persist()  ║     persists object to DB     ║       PersistenceException     ║
+║              ║                               ║                                ║
+╠══════════════╬═══════════════════════════════╬════════════════════════════════╣
+║              ║                               ║                                ║
+║   update()   ║           Exception           ║     persists and reattaches    ║
+║              ║                               ║  throws NonUnique Exception 	║ 
+║			   ║							   ║ if similar object already	 	║
+║			   ║							   ║ present in persitent context	║
+╠══════════════╬═══════════════════════════════╬════════════════════════════════╣
+║              ║  copy the state of object in  ║    copy the state of obj in    ║
+║    merge()   ║     DB, doesn't attach it,    ║      DB, doesn't attach it,    ║
+║              ║ returns a new attached object ║  returns diff attached object  ║
+╠══════════════╬═══════════════════════════════╬════════════════════════════════╣
+║              ║                               ║                                ║
+║saveOrUpdate()║           as save()           ║            as update()         ║
+║              ║                               ║                                ║
+╚══════════════╩═══════════════════════════════╩════════════════════════════════╝
+
+void saveOrUpdate(object)->object must be attached to a hibernate session (including all sub objects within the object), and once save/update is done, the object reflects the updated changes (e.g. primary key if saving a new object)
+
+Object merge(object)-> object does not have to be attached to a hibernate session.  Once save/update is done, the object DOES NOT reflect the change.  The returned object reflects the changes, and it is attached to hibernate session.MERGE method offers greater flexibility when it comes to saving data objects, since you need not worry about attaching object to Session.
+You can create an object, set Id, and other properties on your own, and save it without worrying about the Hibernate Session exception.
+If you’re using saveOrUpdate, the object saved MUST be attached to session.  I believe many people have experienced this issue.
+This means you can create a copy of object from Service layer and just pass the object to your DAO.  Hibernate takes care of MERGING the data to appropriate hibernate session attached object and saves the data.
+The only downside of using MERGE is that the object passed does not reflect the changed information.  So, if you need to use the updated object, you must get it from the returned object, not the parameter object.
+
+Reattaching objects - 
+update - An entity can be reattached using update only if there is no other JVM object (matching the same database row) already associated to the current Hibernate Session.
+Merging - The merge is going to copy the detached entity state (source) to a managed entity instance (destination). If the merging entity has no equivalent in the current Session, one will be fetched from the database. The detached object instance will continue to remain detached even after the merge operation.
+
+http://courses.coreservlets.com/Course-Materials/pdf/hibernate/05-hibernate-Object_Lifecycle_Persistence_and_Session_Management.pdf
+
+How prepared statement prevents sql injection?
+http://www.programmerinterview.com/index.php/database-sql/example-of-prepared-statements-and-sql-injection-prevention/
+In case of prep stat, query(with a ?) and params are sent to database separately, query is compiled and optimized (only once) and then executed using the parameter. Thus the injected malicious sql statement is consider only as a string and not compiled and executed as a separate sql statement.
+
+When to use inverse and cascade?
+http://www.java4s.com/hibernate/hibernate-one-to-many-bidirectional-mapping-example/
+Use inverse=true for bi-directional relationships so we can save either parent or child and all get saved
+
+***Maven***
+
+What are maven goals used to run the project?
+
+what are different maven plugins used? - assembly - making tar files surefire - junit reports cobertura - code coverage etc
+
+what is Automated Continuous Integration and why is it awesome? - Automates the build process. Ensures that every commit results in a stable code base. Ensures downstream projects are not affected
+
+Maven vs Ant
+1. Well defined conventions. Familarity helps new team members to understand project structure and config. we can easily move between Maven projects without bothering much about the builds whereas in Ant projects, we need to spend some extra time with build files to know the configuration and the flow. It is often said, you see a mall and you have seen them all, similarly once you build a Maven project, you can manage any Maven project. 
+2. Less configuration. Since Maven predefines majority of the build process there is less to configure and in size. It’s some thing like this: when it comes to Ant, you have to setup the entire build system whereas in Maven as long as you follow conventions, experts have already setup the build system for you.
+
+
+prod issue - 
+1. null pointer exception in prod,pattern matching failed in string because of a extra space(pattern had the check + instead of *). 
+cause - difference between test data and production data
+2. Object was not deleted from set because it's value was changed hence its hashcode changed and was not found.
+
+***JavaMessageService***
+
+JMS is a message oriented middleware used for integration by providing APIs for applications to communicate with each other.
+Used to process long-running operations asynchronously.Since it is not practical to wait for long times in a web application
+-Loosely coupled - applications do not communicate with each other directly
+-Flexibility - n/w not available or application is not running
+-Asynchronous - producer/consumer do not block each other while sending/receive messages.
+
+Pub/Sub - 
+- Topics instead of queues
+- Multiple publishers/subscribers for a topic
+
+ConnectionFactory > Connection > Session
+Session - createMessage() (bytes,text,map object),createProducer(), createConsumer()	
+
+A message broker provides a programming environment where you can write message transformation code easily and efficiently.
+
+
+***Servlet****
+http://stackoverflow.com/questions/3106452/how-do-servlets-work-instantiation-session-variables-and-multithreading/3106909#3106909
+Servlet config explanation 
+http://tutorials.jenkov.com/java-servlets/web-xml.html
+        Enumeration contextParams = getServletContext().getInitParameterNames();	//context-param, values which can be read from all servlets in your application
+		Enumeration initParams = getServletConfig().getInitParameterNames();  		//Init-param, init parameters of a servlet can only be accessed by that servlet
+The number inside the <load-on-startup>1</load-on-startup> element tells the servlet container in what sequence the servlets should be loaded. 
+The lower numbers are loaded first. If the value is negative, or unspecified, the servlet container can load the servlet at any time. 
+
+//...
+response.setHeader("Cache-Control","no-cache"); //Forces caches to obtain a new copy of the page from the origin server
+response.setHeader("Cache-Control","no-store"); //Directs caches not to store the page under any circumstance
+response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
+response.setHeader("Pragma","no-cache"); //HTTP 1.0 backward compatibility
+//can check userId or something likes this.In this sample, i checked with userName.
+String userName = (String) session.getAttribute("User");
+if (null == userName) {
+request.setAttribute("Error", "Session has ended.  Please login.");
+RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+rd.forward(request, response);
+
+
+***JUnit****
+@Before methods run before each @Test method
+Used for setup/initialization
+@After methods run after each @Test method
+Used for cleanup. For e.g. destroy ehcache manager. since only one is allowed in vm
+
+
+****JBPM****
+3.  What is JBPM?
+jBPM is a flexible Business Process Management (BPM) Suite.
+The core of jBPM is a light-weight, extensible workflow engine written in pure Java that allows you to execute business processes using the latest BPMN 2.0 specification. It can run in any Java environment, embedded in your application or as a service.
+
+4.  What does jBPM do?
+This business process allows you to model your business goals by describing the steps that need to be executed to achieve that goal and the order, using a flow chart.
+This greatly improves the visibility and agility of your business logic, results in higher-level and domain-specific representations that can be understood by business users and is easier to monitor.
+
+5. Mention the main features of JBPM5?
+Visual user friendly editor: Eclipse plugin. 
+BPMN2 standard support: This allows you to choose a different editor to generate your business processes and run them in JBPM5.
+Human Task features: JBPM5 has a native notion of a Human task, an activity that needs to be completed by an actual person and has a lifecycle: it can be started, suspended, completed, etc. It is also a standard spec.
+JPA persistence method: it enables you to choose any database and persistence schema to store the processes variables and history log.
+Powerful rules language: To make decisions within the process you can use Drools rule syntax to for example change a path according to a business condition, such as a credit score.
+
+8.  What is a rule engine?
+A rule engine may be viewed as a sophisticated if/then statement interpreter. The if/then statements that are interpreted are called rules.
+
+9.  What are the advantages of Rule engine?
+Advantages of Rule Engines:
+Greater flexibility: keeping your rules into a Knowledge base let you adapt easily your decisions when they are changing.
+Easier to grasp: Rules are easier to understand than procedural code so they can be effectively used to bridge the gap between business analyst and developers.
+Reduced complexity: When embedding lots of decision points to your procedural codes it can easily turn your application into a nightmare. On the other hand rules can handle much better increasing complexity because they use a consistent representation of business rules.
+Reusability: By keeping rules are kept in one place leads to a greater reusability of your business rules. Also, traditional procedural code often impose unnecessary variations of base rules which are therefore more difficult to reuse in other contexts
+
+10.  What is global in DRL file?
+Global is the keyword used in drools to define a global variable. Global variable is the one which will be visible to all the rules inside a DRL file.
+Globals must be used very carefully in a DRL file, since the changes in a global variable are not notified to the working memory. For example, you are using a list variable as a global and in any rule you are adding a value in a list and in one particular rule, you are checking if list size() > 0, then in this case rule may not fire. Global variable can be used for any type of object.
+
+11.  Where to use global variable?
+Consider a scenario, where in the rules there is a requirement for database connection object. In this case, the DB Connection object can be inserted as a global variable in the working memory and the connection object will be visible to all the rules in that DRL file.
+
+
+***************
+twitter bootstrap
+advanced html and css
+http://learn.shayhowe.com/advanced-html-css/responsive-web-design/
+
+generate bootstrap
+http://www.tutorialrepublic.com/twitter-bootstrap-button-generator.php
+
+http://www.layoutit.com/build?r=16834240
+
+jquery
+pagination - http://stackoverflow.com/questions/20896076/how-to-use-simplepagination-jquery
+loop http://stackoverflow.com/questions/13814057/create-divs-using-a-for-loop-in-jquery-and-assign-ids-to-each-div
+http://www.jquerybyexample.net/2013/07/latest-jquery-interview-questions-answers.html	
+imdb user list url -  
+sample 1 - http://www.imdb.com/list/ls070874180?ref_=tt_rls_5
+sample 2 - http://www.imdb.com/list/ls051756863?ref_=tt_rls_3
+templates
+http://startbootstrap.com/template-overviews/
+hosting - 
+Hostgator
+rearrange grid on resize
+http://stackoverflow.com/questions/9047449/responsive-masonry-jquery-layout-example
+text overlay
+http://www.bootply.com/108696
+dropdown login
+http://www.bootply.com/60886
+flat style form
+http://cssdeck.com/labs/flat-ui-login-form	
+http://codepen.io/rexkirby/pen/Fdnlz
+smoothscroll
+http://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2/
+250 list
+http://stackoverflow.com/questions/19600509/top-250-imdb-detail-php-grabber?rq=1
+domain - mymoviequest
+python imdb data scraper
+https://gist.github.com/Cyph0n/3067482
+batches
+http://stackoverflow.com/questions/12928302/batch-loading-an-array-with-javascript
+scrolling
+http://www.sitepoint.com/jquery-infinite-scrolling-demos/
+Android tutorials
+https://www.mysliderule.com/learning-paths/android
+
+Hosting
+heroku
+
+RoR
+http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.0	
+
+English
+https://owl.english.purdue.edu/owl/section/1/
+
+*****
+1. xml parser utility
+2. detect unreferenced public members (final variables/ methods)
+
+****
+1. discover charities - (iwanttodonate.org)
+2. discover/translate words to multiple languages
+3. display emergency nos based on location
+
+*****************************
+Netting rule audit
+
+*****************************
+production support
+ES performance fix
+ISP installation
+updated ods writer tool to support more page types. Helpful for testing ECG etc.
+CDS queries
+Jiras - completed while being on prod support 
+es perf fix
+ECG reg testing for blackduck
