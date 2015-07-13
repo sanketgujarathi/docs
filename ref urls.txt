@@ -58,30 +58,34 @@ http://www.cubrid.org/blog/dev-platform/understanding-java-garbage-collection/
 Annotations - 
 https://deors.wordpress.com/2011/09/26/annotation-types/
 
+Spring Transactions - 
+http://blog.jhades.org/how-does-spring-transactional-really-work/
+
 Creational Patterns -
 Builder - Build the object step-by-step, return same instance in every step. 
 			StringBuilder/StringBuffer, using the append() method, is an example of BuilderPattern. URI builder
 Factory -  Provides method that return an implementation of an abstract/interface type. 
 			Calendar.getInstance(),SessionFactory.openSession(), Spring beanfactory is an example of Factory pattern
-AbstractFactory - Provides method that return the factory itself which in turn can be used to create another abstract/interface type.
-			Hibernate "new Configuration().configure().buildSessionFactory()" is an example of AbstractFactory pattern(Factory of factoryclasses)
+AbstractFactory - Provides method that return the factory itself which in turn can be used to create another abstract/interface type.(Factory of factoryclasses)
+			Hibernate "new Configuration().configure().buildSessionFactory()" is an example of AbstractFactory pattern
 Singleton - Provides a method that always returns the same instance of the class. 
 			Runtime is an example of Singleton class
 Prototype - Provides a method that returns different instance with the same properties. 
 			Object.clone() is an example of Prototype pattern(Object return copy of itself and modify accordingly)
 
 Behavioural Pattern - 
-Iterator pattern - sequentially traverse through objects of same type and return them one by one. Iterator on collections
-Strategy pattern - 
-
+Iterator pattern - sequentially traverse through objects of same type and return them one by on. Methods - hasNext(), next() and remove(). Iterator on collections
+Strategy pattern - which invokes a method in an implementation of a different abstract/interface type which has been passed-in as method argument into the strategy implementation. The intent of the Strategy Pattern is to make the algorithms easily interchangeable, and provide a means to choose the appropriate algorithm at a particular time.Comparator.compare is example of Strategy pattern
+Command pattern - Lets you encapsulate actions within Java classes, where each class has an "execute()" method which is declared in the Command interface the class implements.The object that invokes the operation is decoupled from the object that knows how to perform the action. E.g - Runnable
+Chain of responsibility - invokes the same method in another implementation of same abstract/interface type in a queue. E.g - Filter.dofilter()
 Structural Patterns -
 Flyweight - Share data/returning a cached instance to save memory. string pool/Wrapper classes is example of Flyweight pattern.
-decorator - take instance of same type and add additional behaviour. Response object class created from model class with added information of jaxb for marshalling
-adapter  - take instance of another abstract/interface and acts as a convertor i.e. provides a new interface for an incompatible client.
-proxy - AOP, reflection
-facade - 
-composite - 
-bridge - 
+Decorator - take instance of same type and add additional behaviour. Wrapper classes is example of decorator.Response object class created from model class with added information of jaxb for marshalling
+Adapter  - take instance of another abstract/interface and acts as a convertor i.e. provides a new interface for an incompatible client. toString method
+Proxy - AOP, reflection
+Facade - 
+Composite - 
+Bridge - 
 
 
 
@@ -195,6 +199,16 @@ why not to use autowiring used? How to enable autowiring. - In case of big proje
 What are design patterns used in spring? Factory pattern in beanfactory, proxy pattern used in AOP	
 
 Which modules / special feature of Spring framework used? dependency injection, AOP, transaction management, custom annotation
+
+****Spring Transaction Management****
+When using JPA outside of a dependency injection container, transactions need to be handled programatically by the developer
+This way of managing transactions makes the scope of the transaction very clear in the code, but it has several disavantages:
+    it's repetitive and error prone
+    any error can have a very high impact
+    errors are hard to debug and reproduce
+    this decreases the readability of the code base
+    What if this method calls another transactional method?
+Managing transactions declaratively by using @Transactional, many important aspects such as transaction propagation are handled automatically.One potential downside is that this powerful mechanism hides what is going on under the hood, making it hard to debug when things don't work.
 
 how would you write junits
 
