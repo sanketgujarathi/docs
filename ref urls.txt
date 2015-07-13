@@ -334,6 +334,13 @@ Maven vs Ant
 1. Well defined conventions. Familarity helps new team members to understand project structure and config. we can easily move between Maven projects without bothering much about the builds whereas in Ant projects, we need to spend some extra time with build files to know the configuration and the flow. It is often said, you see a mall and you have seen them all, similarly once you build a Maven project, you can manage any Maven project. 
 2. Less configuration. Since Maven predefines majority of the build process there is less to configure and in size. It’s some thing like this: when it comes to Ant, you have to setup the entire build system whereas in Maven as long as you follow conventions, experts have already setup the build system for you.
 
+example of  maven scopes- 
+	compile(needed during both compile and runtime) - spring,hibernate
+	provided(needed only during compile time, expected to be provided at runtime by environment)  - servlet-api.jar is a transient dependency in my web project and is needed both at compile time and runtime. But servlet-api.jar is also included in my Tomcat library.
+	Provided scope is only needed at compile time but is not packaged in your app cause it is provided by others, for example it is already in Tomcat server.
+	test - mockito/junit
+	runtime (needed only during runtime)- a JDBC driver can be loaded with a Class.forName and the actual class loaded be configurable through a configuration file.
+	
 
 prod issue - 
 1. null pointer exception in prod,pattern matching failed in string because of a extra space(pattern had the check + instead of *). 
