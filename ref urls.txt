@@ -61,6 +61,9 @@ https://deors.wordpress.com/2011/09/26/annotation-types/
 Spring Transactions - 
 http://blog.jhades.org/how-does-spring-transactional-really-work/
 
+All about Generics - 
+http://javaconceptoftheday.com/why-we-need-generics-in-java/
+
 Creational Patterns -
 Builder - Build the object step-by-step, return same instance in every step. 
 			StringBuilder/StringBuffer, using the append() method, is an example of BuilderPattern. URI builder
@@ -200,6 +203,13 @@ What are design patterns used in spring? Factory pattern in beanfactory, proxy p
 
 Which modules / special feature of Spring framework used? dependency injection, AOP, transaction management, custom annotation
 
+types of controllers in spring
+annotation
+beans scope in spring
+when do u use protype bean scope
+how to inject a prototype dependency in singleton bean
+collections - internal implementation of hashmap
+
 ****Spring Transaction Management****
 When using JPA outside of a dependency injection container, transactions need to be handled programatically by the developer
 This way of managing transactions makes the scope of the transaction very clear in the code, but it has several disavantages:
@@ -321,6 +331,10 @@ In case of prep stat, query(with a ?) and params are sent to database separately
 When to use inverse and cascade?
 http://www.java4s.com/hibernate/hibernate-one-to-many-bidirectional-mapping-example/
 Use inverse=true for bi-directional relationships so we can save either parent or child and all get saved
+
+what is second level cache
+how does it help
+is it enabled by default
 
 ***Maven***
 
@@ -471,7 +485,7 @@ scrolling
 http://www.sitepoint.com/jquery-infinite-scrolling-demos/
 Android tutorials
 https://www.mysliderule.com/learning-paths/android
-prototyp
+prototype
 https://marvelapp.com/
 Hosting
 heroku
