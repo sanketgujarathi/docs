@@ -32,6 +32,8 @@ http://geekswithblogs.net/subodhnpushpak/archive/2009/09/18/the-23-gang-of-four-
 http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns?rq=1
 http://www.briandupreez.net/2010/11/design-patterns-in-jdk.html
 http://k2java.blogspot.com/2011/03/decorator-vs-adapter-pattern.html
+http://gameprogrammingpatterns.com/
+
 
 Drools
 http://www.ayobamiadewole.com/Blog/Business-Rules-Management-in-Java-with-Drools
@@ -48,12 +50,16 @@ http://www.vogella.com/tutorials/JAXB/article.html
 
 Volatile -
 http://www.javamex.com/tutorials/synchronization_volatile.shtml
+Volatile should not be used for read-update-write scenario. It cannot prevent lost update
 
 JPA 101-
 http://openejb.apache.org/jpa-concepts.html
 
 Garbage collection - 
+http://www.corejavainterviewquestions.com/java-garbage-collection-interview-questions/
 http://www.cubrid.org/blog/dev-platform/understanding-java-garbage-collection/
+https://redstack.wordpress.com/2011/01/06/visualising-garbage-collection-in-the-jvm/ 
+http://www.insightfullogic.com/2013/Mar/06/garbage-collection-java-2/
 
 Annotations - 
 https://deors.wordpress.com/2011/09/26/annotation-types/
@@ -63,6 +69,10 @@ http://blog.jhades.org/how-does-spring-transactional-really-work/
 
 All about Generics - 
 http://javaconceptoftheday.com/why-we-need-generics-in-java/
+
+Collections
+http://howtodoinjava.com/2013/06/14/popular-hashmap-and-concurrenthashmap-interview-questions/
+http://howtodoinjava.com/2012/10/09/how-hashmap-works-in-java/
 
 Creational Patterns -
 Builder - Build the object step-by-step, return same instance in every step. 
@@ -203,6 +213,10 @@ What are design patterns used in spring? Factory pattern in beanfactory, proxy p
 
 Which modules / special feature of Spring framework used? dependency injection, AOP, transaction management, custom annotation
 
+How to Forward request to another controller in Spring MVC?
+No need to add @reponseBody annotation as your redirecting to another controller code will look like - 
+return "redirect:/getUser";
+
 types of controllers in spring
 annotation
 beans scope in spring
@@ -257,6 +271,8 @@ Team size? How is the work assigned?
 What automation used in SDLC lifecyle?
 
 Improve performance?
+Reduce IO operations - eg loading of schemas. Changed prototype to singleton.
+Reduce database calls - identified calls made repeatedly during a single execution and introduced caching.
 
 Short term goals?
 
@@ -266,14 +282,18 @@ Appreciation for the analysis work to improve performance of ES component.
 
 What are the design patters used in project?
 Factory pattern - Multiple implementations of an abstract class present. Factory class return appropriate implementation depending on the message type given as input.
-Decorator pattern - Decorator class created from model class with added information of marshalling
+Decorator pattern - Decorator class created from model class with added information of marshalling to entity beans to XML/JSON
 Adapter pattern - Bankapi provided a unified interface for number of underlying web services that provided various core banking functionalities
+
+
 
 What is your role?
 1. Design - what artifacts used?
 2. Configuration of project - ?
-3. Testing
-4. Deployment
+3. Testing - L3 testing using JUnits, Fitnesse/SOAP UI on dev environment
+4. Deployment - Release related activities - release notes, backout plans
+5. Production support - Provided dedicated production support to whenever major functionalities went live. 
+
 
 Tools?
 
@@ -350,11 +370,20 @@ Maven vs Ant
 
 example of  maven scopes- 
 	compile(needed during both compile and runtime) - spring,hibernate
-	provided(needed only during compile time, expected to be provided at runtime by environment)  - servlet-api.jar is a transient dependency in my web project and is needed both at compile time and runtime. But servlet-api.jar is also included in my Tomcat library.
-	Provided scope is only needed at compile time but is not packaged in your app cause it is provided by others, for example it is already in Tomcat server.
+	provided(needed only during compile time, expected to be provided at runtime by environment)  - For e.g servlet-api jar is added as a dependency with provided scope. servlet-api.jar is a transient dependency in my web project and is needed both at compile time and runtime. But servlet-api.jar is also included in my Tomcat library. so it doesn't need to be included in the war file. 
+	Provided scope is only needed at compile time but is not packaged in your app cause it is provided by others, for example it is already in Tomcat server. 
 	test - mockito/junit
 	runtime (needed only during runtime)- a JDBC driver can be loaded with a Class.forName and the actual class loaded be configurable through a configuration file.
 	
+How to create multi module maven project?
+1. Set "packaging" as pom in parent pom
+2. List the modules in <modules> in parent pom
+3. Common dependencies can be added to parent pom
+4. Add a parent section to reference the parent project, which is now the parent project to "mytest".
+
+How to create uber jar
+Use shade plugin
+
 
 prod issue - 
 1. null pointer exception in prod,pattern matching failed in string because of a extra space(pattern had the check + instead of *). 
@@ -441,6 +470,52 @@ Globals must be used very carefully in a DRL file, since the changes in a global
 11.  Where to use global variable?
 Consider a scenario, where in the rules there is a requirement for database connection object. In this case, the DB Connection object can be inserted as a global variable in the working memory and the connection object will be visible to all the rules in that DRL file.
 
+*******Reflection****
+Reflection should be avoided for the following reasons:
+
+    Things break easily during refactorings, since statical types, method and field names are replaced by strings that typically don't participate in refactorings
+
+    Reflection can be used to break encapsulation, e.g. to access private fields; will break when internals change
+
+    Often hard to read & not straight forward to comprehend
+
+None the less, there are situations where usage of reflection is required and justified, e.g.:
+
+    writing code analyzers/annotation processors
+
+    writing a plugin framework
+*****************Garbage collection*************
+Memory divided into 2 areas - heap and perm gen(method area)
+Perm gen - 
+	Method area, information about loaded classes, string pool (before java 7) and object meta data
+	The size of the permanent generation is controlled by two JVM parameters. -XX:PermSize sets the minimum, or initial, size of the permanent generation, and -XX:MaxPermSize sets the maximum size.
+Heap -
+	All objects are stored in Heap. 
+	Configured using above the heap size is -Xms at minimum and -Xmx at maximum.
+	It is further divided into two areas -
+		New/Young gen - 
+			New objects are created in Eden.
+			GC occurs most frequently here.
+			Young gen divided into one Eden space and two Survivor spaces
+			
+			Copy collection algo-
+			Step 1:(‘Copy’) it will copy the objects we still need  into a ‘survivor’ space. There are two survivor spaces and they are smaller than eden in size. 
+			Step 2: Now that all the objects we want to keep are safe in the survivor space, it can simply delete everything in eden, and it is done.
+			Adv: No fragmentation
+			Disadv:This causes "stop the world" pause where all running threads are paused. For large memory like 8GB it could take minutes.
+			Used where number of live objects are less (Eden)
+			
+			Mark-Sweep-Compact Collection algo-
+			Step 1: (‘Mark’), it marks the unused objects
+			Step 2: (‘Sweep’), it deletes those objects from memory.
+			Step 3: (‘Compact’), it moves objects to ‘fill up the gaps,’ thus leaving the largest amount of contiguous memory available in case a large object is created.
+			
+			Used where number of live objects are more(Old gen)
+
+		Old/Tenured gen -
+			Objects in eden move to the old generation when the objects you need to keep are bigger than the survivor space.
+			
+	
 
 ***************
 twitter bootstrap
@@ -489,7 +564,8 @@ prototype
 https://marvelapp.com/
 Hosting
 heroku
-
+Great templates
+http://html5up.net/
 RoR
 http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.0	
 
