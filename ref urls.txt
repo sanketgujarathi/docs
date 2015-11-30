@@ -23,6 +23,8 @@ http://www.javacodegeeks.com/2014/03/building-java-web-application-using-hiberna
 
 Persistence with hibernate and Spring
 http://www.baeldung.com/persistence-with-spring-series/
+http://www.hibernate-training-guide.com/hibernate-example.html
+
 
 How annotation based bean config works illustration
 http://stackoverflow.com/questions/7414794/difference-between-contextannotation-config-vs-contextcomponent-scan
@@ -74,9 +76,12 @@ Collections
 http://howtodoinjava.com/2013/06/14/popular-hashmap-and-concurrenthashmap-interview-questions/
 http://howtodoinjava.com/2012/10/09/how-hashmap-works-in-java/
 
+Java8
+http://winterbe.com/posts/2014/03/16/java-8-tutorial/
 Creational Patterns -
 Builder - Build the object step-by-step, return same instance in every step. 
 			StringBuilder/StringBuffer, using the append() method, is an example of BuilderPattern. URI builder
+			http://www.codejava.net/coding/how-to-use-builder-pattern-for-designing-method-parameters
 Factory -  Provides method that return an implementation of an abstract/interface type. 
 			Calendar.getInstance(),SessionFactory.openSession(), Spring beanfactory is an example of Factory pattern
 AbstractFactory - Provides method that return the factory itself which in turn can be used to create another abstract/interface type.(Factory of factoryclasses)
@@ -196,20 +201,32 @@ Deadlocks
 - When two threads use nested synchronised blocks to lock two objects and the blocks lock the same objects in different order
 
 ***Spring***
-any adv/disadvantage of using xml based spring config over annotation - annotations are simpler as compared to the more tedious xml config, convenient to use because of autowiring, present in the class itself so more visibility(about which members are injected externally) for developer, wiring can be done while creating class itself so less chances of missing out on wiring any member. Disadv -  annotations cannot be used for third party classes (classes from a jar),
+Difference between IoC and DI?
+Inversion of control is the principle where the control flow of a program is inverted: instead of the programmer controlling the flow of a program, the external sources (framework, services, other components) take control of it.
+Eg - Servlet API defines init service and destroy methods. You don't get to control when these methods are called, just what they do. The container calls us, we don't call it.
+DI is a type of IoC.
+This means that objects do not create other objects on which they rely to do their work. Instead, they get the objects that they need from an outside source
+In short, IoC is a much broader term that includes, but is not limited to, DI
+
+Any adv/disadvantage of using xml based spring config over annotation - 
+Annotations are simpler as compared to the more tedious xml config, convenient to use because of autowiring, present in the class itself so more visibility(about which members are injected externally) for developer, wiring can be done while creating class itself so less chances of missing out on wiring any member. Disadv -  annotations cannot be used for third party classes (classes from a jar),
 
 Role of spring framework apart from DI - 
 It also manages lifecycle of beans. Spring IoC you can configure the number of instances of the component – whether the component is a singleton or not – and at what point the component is created and destroyed in memory.
 
-how does aop work
+How does aop work
 
-what type of ioc have you used? adv disadvantage of constructor and setter injections
+What type of ioc have you used? adv disadvantage of constructor and setter injections
+
 
 What is autowiring?
 
-why not to use autowiring used? How to enable autowiring. - In case of big projects while debugging some complex issues then all information present in one place in configuration files, actually helps a lot. Autowiring makes debugging harder since it is less obvious.
+Why not to use autowiring used? How to enable autowiring. - 
+In case of big projects while debugging some complex issues then all information present in one place in configuration files, actually helps a lot. Autowiring makes debugging harder since it is less obvious.
+Autowiring simplifies DI by abstracting the details. However in complex projects with many implementations of the same interface, this could create difficulties as the injection details are not obvious.
 
-What are design patterns used in spring? Factory pattern in beanfactory, proxy pattern used in AOP	
+What are design patterns used in spring? 
+Factory pattern in beanfactory, proxy pattern used in AOP	
 
 Which modules / special feature of Spring framework used? dependency injection, AOP, transaction management, custom annotation
 
@@ -298,6 +315,10 @@ What is your role?
 Tools?
 
 ***Hibernate***
+Hibernate configurations - 
+All hibernate.* properties are loaded into the Configuration object when it is created.
+SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory(); 
+When configure() is called, the classpath is searched for an XML configuration file called hibernate.cfg.xml. 
 hibernate transactions
 
 How is Proxy used in Hibernate?
@@ -315,11 +336,10 @@ Object persistence in Hibernate
 ║   persist()  ║     persists object to DB     ║       PersistenceException     ║
 ║              ║                               ║                                ║
 ╠══════════════╬═══════════════════════════════╬════════════════════════════════╣
-║              ║                               ║                                ║
 ║   update()   ║           Exception           ║     persists and reattaches    ║
-║              ║                               ║  throws NonUnique Exception 	║ 
-║			   ║							   ║ if similar object already	 	║
-║			   ║							   ║ present in persitent context	║
+║              ║                               ║  throws NonUnique Exception 	║
+║	       ║			       ║ if similar object already	║
+║	       ║			       ║present in persistence context	║
 ╠══════════════╬═══════════════════════════════╬════════════════════════════════╣
 ║              ║  copy the state of object in  ║    copy the state of obj in    ║
 ║    merge()   ║     DB, doesn't attach it,    ║      DB, doesn't attach it,    ║
@@ -339,8 +359,8 @@ This means you can create a copy of object from Service layer and just pass the 
 The only downside of using MERGE is that the object passed does not reflect the changed information.  So, if you need to use the updated object, you must get it from the returned object, not the parameter object.
 
 Reattaching objects - 
-update - An entity can be reattached using update only if there is no other JVM object (matching the same database row) already associated to the current Hibernate Session.
-Merging - The merge is going to copy the detached entity state (source) to a managed entity instance (destination). If the merging entity has no equivalent in the current Session, one will be fetched from the database. The detached object instance will continue to remain detached even after the merge operation.
+update - An entity can be reattached using update only if there is no other JVM object (matching the same database row) already associated to the current Hibernate Session. Otherwise throws NonUniqueObjectException
+Merging - The merge is going to copy the detached entity state (source) to a managed entity instance (destination). It uses the object identifiers to check on this existence. If the merging entity has no equivalent in the current Session, one will be fetched from the database. The detached object instance will continue to remain detached even after the merge operation.
 
 http://courses.coreservlets.com/Course-Materials/pdf/hibernate/05-hibernate-Object_Lifecycle_Persistence_and_Session_Management.pdf
 
@@ -350,8 +370,20 @@ In case of prep stat, query(with a ?) and params are sent to database separately
 
 When to use inverse and cascade?
 http://www.java4s.com/hibernate/hibernate-one-to-many-bidirectional-mapping-example/
+Inverse attribute is always present in one-to-many and many-to-many relationship and it denotes which side is responsible to for the relationship. It’s default value is false
 Use inverse=true for bi-directional relationships so we can save either parent or child and all get saved
+Inverse attribute is always present in one-to-many and many-to-many relationship and it denotes which side is responsible to for the relationship. It’s default value is false
+Student {
+@OneToMany(inverse = false)
+Set<Project> finalYearProjects;
+}
+Here Project is the parent and responsible for maintaining the foreign key.  If you want to add a new “couple” to the relationship, you have to add a Student instance to the Project's student attribute. And again, if you want to delete a “couple” of the relationship you have to null the student attribute of the Project class.
+If inverse is true Student is the owner.
 
+Hibernate Detached state?
+http://www.hibernate-training-guide.com/detached-state.html
+The Detached state may seem odd at first glance, but it provides an incredibly powerful capability to applications.
+Applications could not (or should not) typically maintain long running transactions or connections to a database. The Detached state allows Java objects to exist and to be used, but without a long running session/transaction. 
 what is second level cache
 how does it help
 is it enabled by default
@@ -369,26 +401,33 @@ Maven vs Ant
 2. Less configuration. Since Maven predefines majority of the build process there is less to configure and in size. It’s some thing like this: when it comes to Ant, you have to setup the entire build system whereas in Maven as long as you follow conventions, experts have already setup the build system for you.
 
 example of  maven scopes- 
-	compile(needed during both compile and runtime) - spring,hibernate
+	compile(needed during both compile and runtime) - spring,hibernate. For a web application, as an example, the JAR will be placed in the WEB-INF/lib directory. 
 	provided(needed only during compile time, expected to be provided at runtime by environment)  - For e.g servlet-api jar is added as a dependency with provided scope. servlet-api.jar is a transient dependency in my web project and is needed both at compile time and runtime. But servlet-api.jar is also included in my Tomcat library. so it doesn't need to be included in the war file. 
-	Provided scope is only needed at compile time but is not packaged in your app cause it is provided by others, for example it is already in Tomcat server. 
+	Provided scope is only needed at compile time but is not packaged in your app cause it is provided by others, for example it is already in Tomcat server.  For a web app, this means that the JAR file will not be placed into the WEB-INF/lib directory. 
 	test - mockito/junit
 	runtime (needed only during runtime)- a JDBC driver can be loaded with a Class.forName and the actual class loaded be configurable through a configuration file.
 	
 How to create multi module maven project?
-1. Set "packaging" as pom in parent pom
+1. Set <packaging> as pom in parent pom
 2. List the modules in <modules> in parent pom
 3. Common dependencies can be added to parent pom
-4. Add a parent section to reference the parent project, which is now the parent project to "mytest".
+4. Add a <parent> section in the child project pom to reference the parent project, which is now the parent project.
 
 How to create uber jar
 Use shade plugin
 
+How to stop the propagation of plugins to child POMs?
+<inherited>false</inherited>
+
+What is dependency exclusion ?
+Any transitive dependency can be exclude using "exclusion" element. As example, A depends upon B and B depends upon C then A can mark C as excluded.
 
 prod issue - 
 1. null pointer exception in prod,pattern matching failed in string because of a extra space(pattern had the check + instead of *). 
 cause - difference between test data and production data
 2. Object was not deleted from set because it's value was changed hence its hashcode changed and was not found.
+3. Changing bean scope from prototype to singleton for class which does I/O operation for loading schema files. This resulted in significant performance improvements.
+
 
 ***JavaMessageService***
 
