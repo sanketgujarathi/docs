@@ -120,7 +120,7 @@
   <div class="center fixed-content">
     <div class="center-fix">
     <h1 class="underline animated fadeInDown">Arvind's Luggage Rental</h1>
-    <h4 class="animated fadeInUp delay-05s" style="margin-bottom: 50px;">Travel with convenience<strong class="green">and style</strong></h4>
+    <h4 class="animated fadeInUp delay-05s" style="margin-bottom: 50px;">Travel with convenience<strong class="green"> and style</strong></h4>
     <a class="button animated fadeInUp delay-1s" href="index.html#features" style="margin-right: 20px;"><span><i class="cogelegance-icons-"></i></span>BOOK MY LUGGAGE</a>
 	<a class="button border animated fadeInUp delay-1s" href="index.html#contact">REQUEST A QUOTE</a>
   </div>
@@ -352,7 +352,7 @@
 
       </div>
 
-      <div class="w-col w-col-6">
+     
 
           <div class="w-col w-col-3">
 
@@ -410,6 +410,11 @@
 			
 			<div class="spacing"></div>
 			
+
+          </div>
+		
+	 <div class="w-col w-col-6">
+	  
 			<div class="right wp8">
 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut exercitation ullamco labore et dolore magna aliqua exercitation ullamco labore et dolore magna aliqua.</p>
@@ -431,9 +436,6 @@
             </div>
 
           </div>
-
-          </div>
-
   </div>
 
 </div>
