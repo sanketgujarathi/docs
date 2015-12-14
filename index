@@ -4,7 +4,7 @@
 <head><!-- START HEAD -->
   <meta charset="utf-8">
   <!-- START TITLE -->
-  <title>Arvind's Luggage Rental</title>
+  <title>Bagget Luggage Rental</title>
   <!-- END TITLE -->
 
 
@@ -56,7 +56,7 @@
 
 <!-- CHANGEABLE UNIQUE SECTION ID -->
 <section id="home">
-
+f
   <!-- START FIXED HEADER DIV -->
   <div class="banner">
     <!-- START CONTAINER -->
@@ -66,7 +66,7 @@
         <!-- START COLUMN 3 -->
         <div class="w-col w-col-3 logo">
           <!-- START LOGO -->
-          <a href="#"><img class="logo" src="images/logo.png" alt="FLAT ASPHALT"></a>
+          <a href="#"><img class="logo" src="images/logo1.png" alt="bagget"></a>
           <!-- END LOGO -->
         </div><!-- END COLUMN 3 -->
       
@@ -80,10 +80,10 @@
               <!-- START NAVIGATION LINKS -->
               <nav class="w-nav-menu nav-menu" role="navigation">
 
-                <a class="w-nav-link menu-li" href="#home">OUR SERVICE</a>
-                <a class="w-nav-link menu-li" href="index.html#features">OUR RANGE</a>
-                <a class="w-nav-link menu-li" href="index.html#service">RENTING LUGGAGE</a>
-                <a class="w-nav-link menu-li" href="index.html#portfolio">REQUEST A QUOTE</a>
+                <a class="w-nav-link menu-li" href="index.html#service">OUR SERVICE</a>
+                <a class="w-nav-link menu-li" href="index.html#range">OUR RANGE</a>
+                <a class="w-nav-link menu-li" href="index.html#quote">REQUEST A QUOTE</a>
+                <a class="w-nav-link menu-li" href="index.html#order">RENTING LUGGAGE</a>
                 <a class="w-nav-link menu-li" href="index.html#team">CONTACT US</a>
                 <a class="w-nav-link menu-li" href="shortcodes.html">FAQ</a>
 
@@ -119,7 +119,8 @@
 
   <div class="center fixed-content">
     <div class="center-fix">
-    <h1 class="underline animated fadeInDown">Arvind's Luggage Rental</h1>
+	<img class="thumbnail-img" src="images/logo-bagget.png" alt="Bagget">
+   <!--  <h1 class="underline animated fadeInDown">Bagget</h1> -->
     <h4 class="animated fadeInUp delay-05s" style="margin-bottom: 50px;">Travel with convenience<strong class="green"> and style</strong></h4>
     <a class="button animated fadeInUp delay-1s" href="index.html#features" style="margin-right: 20px;"><span><i class="cogelegance-icons-"></i></span>BOOK MY LUGGAGE</a>
 	<a class="button border animated fadeInUp delay-1s" href="index.html#contact">REQUEST A QUOTE</a>
@@ -137,8 +138,13 @@
        //////////////////////////////////////////////////////////-->
 
 
+<!--///////////////////////////////////////////////////////
 
-  <div id="features">
+       // Service section 
+
+       //////////////////////////////////////////////////////////-->
+
+  <div id="service">
 
     <div class="row-back">
 
@@ -146,7 +152,7 @@
 
           <div class="center">
 
-            <h2 class="underline">	 <span class="green">SERVICES</span></h2>
+            <h1 class="underline">	 <span class="green">OUR SERVICES</span></h1>
 
             <p><strong>Luggage</strong> that makes your travel easier</p>
 
@@ -162,7 +168,7 @@
 
               <p>
 
-               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
+               No need to hoard all that luggage at home that you will use only once in a while. Free that precious real estate at home.
 
               </p>
 
@@ -180,7 +186,7 @@
 
               <p>
 
-               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
+               Luggage is not just luggage any more. Make a style statement as you travel.
 
               </p>
 
@@ -198,19 +204,20 @@
 
               <p>
 
-               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.
+               Timely pick-up and drop service at your door step. No hassles.
 
               </p>
 
             </div>
 
-          </div>
+          </div>`
 
         </div>
 
       </div>
 
     </div>
+
 
 
 
@@ -222,19 +229,21 @@
 
           <div class="center">
 
-            <h1 class="underline">Our Range</h1>
-
-            <h4>Stylish and sturdy <strong class="red">Samsonite</strong> suitcases that will make your travel a breeze</h4>
-
-            <p>lorem ipsum metea data, what a lovely traeat to eyes</p>
-
+            <h1 class="underline">How does it work?</h1>
+			
           </div>
 
         </div>
 
     </div>
 
-  </div>
+<!--///////////////////////////////////////////////////////
+
+       // End Service section 
+
+       //////////////////////////////////////////////////////////-->
+
+
 
   <div class="parallax-back" data-stellar-background-ratio="0.5">
 
@@ -246,13 +255,11 @@
 
             <div class="icon-box">
 
-              <i class="cogelegance-icons-"></i>
+              <img src="images/services/briefcase.png" alt="print">
 
-                <h2><strong><span class="red">Checkin Bag 75"</span></strong></h2>
+                <h3><strong><span class="red">Choose Luggage</span></strong></h3>
 
-                <h4>Samsonite</h4>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+                <p>Wide variety of options available in all shapes and sizes to suit all your travel needs</p>
 
               </div>
 
@@ -262,13 +269,11 @@
 
             <div class="icon-box">
 
-              <i class="paper-planeelegance-icons-"></i>
+              <img src="images/services/location.png" alt="print">
 
-                <h2><strong><span class="red">Checkin Bag 66"</span></strong></h2>
+                <h3><strong><span class="red">Choose drop location</span></strong></h3>
 
-                <h4>Samsonite</h4>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+                <p>We deliver to your doorstep</p>
 
               </div>
 
@@ -278,13 +283,11 @@
 
             <div class="icon-box">
 
-              <i class="cloudelegance-icons-"></i>
+              <img src="images/services/calendar.png" alt="print">
 
-                <h2><strong><span class="red">Cabin Bag 55"</span></strong></h2>
+                <h3><strong><span class="red">Choose suitable time</span></strong></h3>
 
-                <h4>Samsonite</h4>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+                <p>As per your convenience</p>
 
               </div>
 
@@ -294,13 +297,11 @@
 
             <div class="icon-box">
 
-              <i class="win8elegance-icons-"></i>
+              <img src="images/services/running.png" alt="print">
 
-                <h2><strong><span class="red">Wheeled Duffle Bag</span></strong></h2>
+                <h3><strong><span class="red">We do the rest</span></strong></h3>
 
-                <h4>Samsonite</h4>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+                <p>Plan the rest of your travel</p>
 
               </div>
 
@@ -313,28 +314,19 @@
     </div>
 
 
-
-
-
-
-
 <!--///////////////////////////////////////////////////////
 
-       // Service section 
+       // End Range section 
 
        //////////////////////////////////////////////////////////-->
 
-
-
-
-
-  <div id="service">
+  <div id="range">
 
     <div class="row-gree">
 
       <div class="w-container wrap">
         <div class="center">
-          <h1 class="underline">HOW DOES IT WORK</h1>
+          <h1 class="underline">OUR RANGE</h1>
         </div>
         </div>
 
@@ -346,9 +338,9 @@
 
         <div class="center">
 
-        <h2>WHAT <span class="green">WE</span> DO</h2>
+        <h4>Stylish and sturdy <strong class="green">Samsonite</strong> suitcases that will make your travel a breeze</h4>
 
-        <p>lorem ipsum metea data, what a lovely treat to eyes</p>
+        <p>Take your pick from the wide range available</p>
 
       </div>
 
@@ -358,25 +350,11 @@
 
             <div class="icon-box">
 
-              <img src="images/services/branding.png" alt="branding">
+              <img src="images/services/cabin-red.jpg" alt="cabin">
 
-              <h3 class="underline">branding</h3>
+              <h3 class="underline">CABIN</h3>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut exercitation ullamco labore et dolore magna aliqua.</p>
-
-            </div>
-
-          </div>
-
-          <div class="w-col w-col-3">
-
-            <div class="icon-box">
-
-              <img src="images/services/motion.png" alt="motion">
-
-              <h3 class="underline">motion</h3>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut exercitation ullamco labore et dolore magna aliqua.</p>
+              <p>Flexible and lightweight suitcases with stylish designs</p>
 
             </div>
 
@@ -386,11 +364,11 @@
 
             <div class="icon-box">
 
-              <img src="images/services/print.png" alt="print">
+              <img src="images/services/checkin-lavender.jpg" alt="checkin">
 
-              <h3 class="underline">print</h3>
+              <h3 class="underline">CHECK-IN</h3>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut exercitation ullamco labore et dolore magna aliqua.</p>
+              <p>Spacious and sturdy suitcases made of 100% high quality polycarbonate</p>
 
             </div>
 
@@ -400,42 +378,56 @@
 
             <div class="icon-box">
 
-              <img src="images/services/Web.png" alt="Web">
+              <img src="images/services/rucksack-red.jpg" alt="rucksack">
 
-              <h3 class="underline">Web Design</h3>
+              <h3 class="underline">RUCKSACKS</h3>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut exercitation ullamco labore et dolore magna aliqua.</p>
+              <p>Functional and reliable backpacks with multiple pockets and padded straps</p>
+
+            </div>
+
+          </div>
+
+          <div class="w-col w-col-3">
+
+            <div class="icon-box">
+
+              <img src="images/services/duffle-blue.jpg" alt="duffle">
+
+              <h3 class="underline">DUFFLE BAGS</h3>
+
+              <p>Spacious and comfortable duffle bags with make them easy to carry around</p>
 
             </div>
 			
-			<div class="spacing"></div>
-			
-
           </div>
 		
-	 <div class="w-col w-col-6">
-	  
-			<div class="right wp8">
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut exercitation ullamco labore et dolore magna aliqua exercitation ullamco labore et dolore magna aliqua.</p>
-
-              <a class="button wp8 delay-05s">BOOK MY LUGGAGE</a>
-
-            </div>
-
+	 		  <!-- <div class="parallax-back"  data-stellar-background-ratio="0.5">
+      <div class="opcaity">
+  
+</div>
+</div> -->
+		<div class="w-container wrap">
+     <div class="w-col w-col-4">
+          <div class="center">
+            <h2>Buying</h2>
+			<h4>from Rs. 3000</h4>
+			<a class="button wp8 delay-05s">BOOK MY LUGGAGE</a>
           </div>
-
-          <div class="w-col w-col-6">
-
-            <div class="left wp7">
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut exercitation ullamco labore et dolore magna aliqua exercitation ullamco labore et dolore magna aliqua.</p>
-
-              <a class="button border wp7 delay-05s">REQUEST A QUOTE</a>
-
-            </div>
-
+        </div>
+        <div class="w-col w-col-4">
+          <div class="center">
+            <div class="circule circule-info"><p class="info"><strong class="info-strong">v/s</strong></p></div>
           </div>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="center">
+            <h2><span class="green">Renting</span></h2>
+			<h4>from Rs. 249 for a 7 day rental</h4>
+			<a class="button border wp7 delay-05s">REQUEST A QUOTE</a>
+          </div>
+        </div>
+  </div>
   </div>
 
 </div>
@@ -446,7 +438,7 @@
 
 <!--///////////////////////////////////////////////////////
 
-       // End Service section 
+       // End Range section 
 
        //////////////////////////////////////////////////////////-->
 
@@ -460,6 +452,208 @@
 
        //////////////////////////////////////////////////////////-->
 
+
+<!--///////////////////////////////////////////////////////
+
+       // End Process section 
+
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+
+       // Our-plan section 
+
+       //////////////////////////////////////////////////////////-->
+<div id="quote">
+
+    <div class="row-gree">
+
+      <div class="w-container wrap-normal">
+
+        <div class="center">
+
+          <h1 class="underline">OUR PRICING PLANS</h1>
+
+          <h5>Check our <strong class="red">competitive</strong> prices for our products.</h5>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row-back">
+
+      <div class="w-container wrapper">
+
+        <div class="pricing-table">
+
+          <div class="w-co w-col-3 wp3">
+
+            <div class="pricing-section">
+
+              <div class="pricing-header">
+
+                <h3>CABIN</h3>
+
+                <span class="preice">Rs.349 / Per Week</span>
+
+              </div>
+
+              <div class="pricing-content">
+
+                <ul>
+
+                  <li>Cras dapibus vivamus elementum</li>
+
+                  <li>Semper nisi aenean vulputate</li>
+
+                  <li>Tellus aenean leo ligula porttitor</li>
+
+                  <li>Consequat vitae eleifend ac enim</li>
+
+                </ul>
+
+              </div>
+
+              <div class="pricing-footer">
+
+                <a class="button border">Purchase Now</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+           <div class="w-co w-col-3 wp3 delay-05s"">
+
+            <div class="pricing-section">
+
+              <div class="pricing-header">
+
+                <h3>CHECK-IN</h3>
+
+                <span class="preice">Rs.399 / Per Week</span>
+
+              </div>
+
+              <div class="pricing-content">
+
+                <ul>
+
+                  <li>Cras dapibus vivamus elementum</li>
+
+                  <li>Semper nisi aenean vulputate</li>
+
+                  <li>Tellus aenean leo ligula porttitor</li>
+
+                  <li>Consequat vitae eleifend ac enim</li>
+
+                </ul>
+
+              </div>
+
+              <div class="pricing-footer">
+
+                <a class="button border">Purchase Now</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+		  
+          <div class="w-co w-col-3 wp3 delay-1s">
+
+            <div class="pricing-section">
+
+              <div class="pricing-header">
+
+                <h3>RUCKSACKS</h3>
+
+                <span class="preice">Rs.299 / Per Week</span>
+
+              </div>
+
+              <div class="pricing-content">
+
+                <ul>
+
+                  <li>Cras dapibus vivamus elementum</li>
+
+                  <li>Semper nisi aenean vulputate</li>
+
+                  <li>Tellus aenean leo ligula porttitor</li>
+
+                  <li>Consequat vitae eleifend ac enim</li>
+
+                </ul>
+
+              </div>
+
+              <div class="pricing-footer">
+
+                <a class="button border">Purchase Now</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="w-co w-col-3 wp3 delay-1-5s">
+
+            <div class="pricing-section last">
+
+              <div class="pricing-header">
+
+                <h3>DUFFLE</h3>
+
+                <span class="preice">Rs.249 / Per Week</span>
+
+              </div>
+
+              <div class="pricing-content">
+
+                <ul>
+
+                  <li>Cras dapibus vivamus elementum</li>
+
+                  <li>Semper nisi aenean vulputate</li>
+
+                  <li>Tellus aenean leo ligula porttitor</li>
+
+                  <li>Consequat vitae eleifend ac enim</li>
+
+                </ul>
+
+              </div>
+
+              <div class="pricing-footer">
+
+                <a class="button border">Purchase Now</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+<!--///////////////////////////////////////////////////////
+
+       // End Our-Plan section 
+
+       //////////////////////////////////////////////////////////-->
 
 
   <div class="parallax-back" data-stellar-background-ratio="0.5">
@@ -548,441 +742,6 @@
 
 
 
-<!--///////////////////////////////////////////////////////
-
-       // End Process section 
-
-       //////////////////////////////////////////////////////////-->
-
-
-
-<!--///////////////////////////////////////////////////////
-
-       // Porfolio section 
-
-       //////////////////////////////////////////////////////////-->
-
-
-
-  <div id="portfolio">
-
-    <div class="row-gree">
-
-      <div class="w-container wrap">
-
-        <div class="center">
-
-          <h1 class="underline">SEE OUR WORK</h1>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="row-back">
-
-      <div class="w-container center">
-
-        <div class="row">
-
-          <div class="options">
-
-            <ul>
-
-    <li class="filter button border medium active" data-filter="all">Show All</li>
-
-    <li class="filter button border medium" data-filter="web_design">Web Design</li>
-
-    <li class="filter button border medium" data-filter="html5_css3">HTML5 CSS3</li>
-
-</ul>
-
-          </div>
-
-        </div>
-
-        </div>
-
-         <ul class="lb-album" id="Grid">
-
-    <li class="mix web_design mix_all">
-
-     <a class="image-popup-no-margins"  alt="responsive" title="Responsive Design" href="images/portfolio/thumbnail-01.jpg">
-
-        <img src="images/portfolio/thumbnail-01.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">Responsive Design</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-      </a>
-
-     
-
-    </li>
-
-    <li class="mix html5_css3 mix_all">
-
-      <a class="image-popup-no-margins" href="images/portfolio/thumbnail-07.jpg">
-
-        <img src="images/portfolio/thumbnail-07.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">HTML5 & CSS3</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-       </a>
-
-    </li>
-
-    <li class="mix html5_css3 mix_all">
-
-      <a class="image-popup-no-margins" href="images/portfolio/thumbnail-08.jpg">
-
-        <img src="images/portfolio/thumbnail-08.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">Grid System</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-       </a>
-
-    </li>
-
-    <li class="mix web_design mix_all">
-
-      <a class="image-popup-no-margins" href="images/portfolio/thumbnail-02.jpg">
-
-        <img src="images/portfolio/thumbnail-02.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">IOS7 Style</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-      </a>
-
-    </li>
-
-     <li class="mix web_design mix_all">
-
-      <a class="image-popup-no-margins" href="images/portfolio/thumbnail-03.jpg">
-
-        <img src="images/portfolio/thumbnail-03.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">Design Works</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-      </a>
-
-    </li>
-
-    <li class="mix html5_css3 mix_all">
-
-      <a class="image-popup-no-margins" href="images/portfolio/thumbnail-06.jpg">
-
-        <img src="images/portfolio/thumbnail-06.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">JQuery Slider</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-      </a>
-
-    </li>
-
-    <li class="mix web_design mix_all">
-
-    <a class="image-popup-no-margins" href="images/portfolio/thumbnail-04.jpg">
-
-        <img src="images/portfolio/thumbnail-04.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">Hunting Themes</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-      </a>
-
-    </li>
-
-    <li class="mix web_design mix_all">
-
-      <a class="image-popup-no-margins" href="images/portfolio/thumbnail-05.jpg">
-
-        <img src="images/portfolio/thumbnail-05.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">Flat Design</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-      </a>
-
-    </li>
-
-    
-
-    <li class="mix html5_css3 mix_all">
-
-      <a class="image-popup-no-margins" href="images/portfolio/thumbnail-09.jpg">
-
-        <img src="images/portfolio/thumbnail-09.jpg">
-
-        <span>
-
-          <h4 class="underline heading-description">Long Shadow</h4>
-
-          <p class="center description">Clinet / Themeforest</p>
-
-        </span>
-
-      </a>
-
-    </li>
-
-    </ul>
-
-    </div>
-
-  </div>
-
-
-
-<!--///////////////////////////////////////////////////////
-
-       // End Porfolio section 
-
-       //////////////////////////////////////////////////////////-->
-
-
-
-<!--///////////////////////////////////////////////////////
-
-       // Our-plan section 
-
-       //////////////////////////////////////////////////////////-->
-
-    <div class="row-gree">
-
-      <div class="w-container wrap-normal">
-
-        <div class="center">
-
-          <h1 class="underline">OUR PRICING PLANS</h1>
-
-          <p>Check our <strong class="red">competitive</strong> prices for our products.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="row-back">
-
-      <div class="w-container wrapper">
-
-        <div class="pricing-table">
-
-          <div class="w-co w-col-3 wp3">
-
-            <div class="pricing-section">
-
-              <div class="pricing-header">
-
-                <h3>ENTERPRISE</h3>
-
-                <span class="preice">$59 / Per Month</span>
-
-              </div>
-
-              <div class="pricing-content">
-
-                <ul>
-
-                  <li>Cras dapibus vivamus elementum</li>
-
-                  <li>Semper nisi aenean vulputate</li>
-
-                  <li>Tellus aenean leo ligula porttitor</li>
-
-                  <li>Consequat vitae eleifend ac enim</li>
-
-                </ul>
-
-              </div>
-
-              <div class="pricing-footer">
-
-                <a class="button border">Purchase Now</a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="w-co w-col-3 wp3 delay-05s">
-
-            <div class="pricing-section pricing-main">
-
-              <div class="pricing-header header-main">
-
-                <h3>PROFESSIONAL</h3>
-
-                <span class="preice">$29 / Per Month</span>
-
-              </div>
-
-              <div class="pricing-content">
-
-                <ul>
-
-                  <li>Cras dapibus vivamus elementum</li>
-
-                  <li>Semper nisi aenean vulputate</li>
-
-                  <li>Tellus aenean leo ligula porttitor</li>
-
-                  <li>Consequat vitae eleifend ac enim</li>
-
-                </ul>
-
-              </div>
-
-              <div class="pricing-footer footer-main">
-
-                <a class="button">Purchase Now</a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="w-co w-col-3 wp3 delay-1s">
-
-            <div class="pricing-section">
-
-              <div class="pricing-header">
-
-                <h3>STANDARD</h3>
-
-                <span class="preice">$19 / Per Month</span>
-
-              </div>
-
-              <div class="pricing-content">
-
-                <ul>
-
-                  <li>Cras dapibus vivamus elementum</li>
-
-                  <li>Semper nisi aenean vulputate</li>
-
-                  <li>Tellus aenean leo ligula porttitor</li>
-
-                  <li>Consequat vitae eleifend ac enim</li>
-
-                </ul>
-
-              </div>
-
-              <div class="pricing-footer">
-
-                <a class="button border">Purchase Now</a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="w-co w-col-3 wp3 delay-1-5s">
-
-            <div class="pricing-section last">
-
-              <div class="pricing-header">
-
-                <h3>BASIC</h3>
-
-                <span class="preice">$9 / Per Month</span>
-
-              </div>
-
-              <div class="pricing-content">
-
-                <ul>
-
-                  <li>Cras dapibus vivamus elementum</li>
-
-                  <li>Semper nisi aenean vulputate</li>
-
-                  <li>Tellus aenean leo ligula porttitor</li>
-
-                  <li>Consequat vitae eleifend ac enim</li>
-
-                </ul>
-
-              </div>
-
-              <div class="pricing-footer">
-
-                <a class="button border">Purchase Now</a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-<!--///////////////////////////////////////////////////////
-
-       // End Our-Plan section 
-
-       //////////////////////////////////////////////////////////-->
-
-
 
 <!--///////////////////////////////////////////////////////
 
@@ -1006,9 +765,9 @@
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
+              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
               <span>
-                <h3 class="team-heading">James Dylan</h3>
+                <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
                 <p class="team-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
               </span>
@@ -1026,9 +785,9 @@
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
+              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
               <span>
-                <h3 class="team-heading">James Dylan</h3>
+                <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
                 <p class="team-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
               </span>
@@ -1046,9 +805,9 @@
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
+              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
               <span>
-                <h3 class="team-heading">James Dylan</h3>
+                <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
                 <p class="team-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
               </span>
@@ -1066,9 +825,9 @@
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
+              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
               <span>
-                <h3 class="team-heading">James Dylan</h3>
+                <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
                 <p class="team-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
               </span>
@@ -1090,27 +849,7 @@
   </div>
 </div>
 
-<div class="parallax-back"  data-stellar-background-ratio="0.5">
-      <div class="opcaity">
-  <div class="w-container wrap">
-     <div class="w-col w-col-4">
-          <div class="center">
-            <h3>NOBODY’S <span class="green">PERFECT.</span> THAT DOESN’T MEAN WE WON’T TRY!</h3>
-          </div>
-        </div>
-        <div class="w-col w-col-4">
-          <div class="center">
-            <div class="circule circule-info"><p class="info"><strong class="info-strong">99%</strong><br/>CLIENT<br/>SATISFACTION</p></div>
-          </div>
-        </div>
-        <div class="w-col w-col-4">
-          <div class="center">
-            <h3 class="info-x">WANT TO KNOW HOW WE CAN HELP YOU? <br/><a href="mailto:INFO@elgance.COM"><span class="email">INFO@FLATASPHALT.COM</span></a></h3>
-          </div>
-        </div>
-  </div>
-</div>
-</div>
+
 
 
 <!--///////////////////////////////////////////////////////
@@ -1121,86 +860,115 @@
 
 
 
-<!--///////////////////////////////////////////////////////
-
-       // Clients section 
-
-       //////////////////////////////////////////////////////////-->
-
-<div class="row-gree">
-  <div class="w-container wrap-normal">
-    <div class="center">
-      <h1 class="underline">OUR CLIENTS</h1>
-    </div>
-  </div>
-</div>
-
-  <div class="row-back">
-
-      <div class="w-container wrap-normal">
-          
-          <div class="center">
-            <h2>A BRIEF OVERVIEW OF OUR CLIENTS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-          </div>
-
-          <div class="clients-sub">
-
-            <div id="clients">
-
-        <div class="clients-wrap">
-
-          <ul id="clients-list" class="clearfix">
-
-            <li><img src="images/clients/logo1.png" alt="logo"></li>
-
-            <li><img src="images/clients/logo2.png" alt="logo"></li>
-
-            <li><img src="images/clients/logo3.png" alt="logo"></li>
-
-            <li><img src="images/clients/logo4.png" alt="logo"></li>
-
-          </ul>
-
-        </div><!-- @end .clients-wrap -->
-
-      </div><!-- @end #clients -->
-
-          </div>
-
-
-      </div>
-
-
-  </div>
-
-
 
 <!--///////////////////////////////////////////////////////
 
-       // End Clients section 
+       // Order section 
 
        //////////////////////////////////////////////////////////-->
 
 
 
-<!--///////////////////////////////////////////////////////
-
-       // Contact section 
-
-       //////////////////////////////////////////////////////////-->
-
-
-
-  <div id="contact">
+  <div id="order">
 
     <div class="parallax-back"  data-stellar-background-ratio="0.5">
       <div class="opcaity">
       <div class="w-container wrap">
 
                   <div class="center">
-                    <h1 class="underline">GET IN TOUCH</h1>
-                    <p>Feel free to contact us at any time, nam liber tempor cum <br/>soluta nobis eleifend option congue nihil.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br/>Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et <br/>magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+                    <h1 class="underline">Place your order</h1>
+                    <p>Please complete the below order form to place your order. You will receive an email on confirmation</p>
+
+          <div class="w-form">
+
+            <form action="contact.php" method="post">
+
+            <label for="name"></label>
+
+             <input class="w-input" type="text" id="name" placeholder="Enter your name" name="cf_name">
+			
+			<label for="location"></label>
+
+             <input class="w-input" type="text" id="location" placeholder="Enter drop location" name="cf_location">
+    <div class='w-col w-col-6'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="w-input form-control" placeholder="Enter preferred date" name="cf_date"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='w-col w-col-6'>
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class=" w-input form-control" placeholder="Enter prefered time" name="cf_time"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+	
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+
+           <label for="email"></label>
+
+             <input class="w-input" placeholder="Enter your email address" type="text"  id="email" name="cf_email" required="required">
+
+           <label for="message"></label>
+
+             <textarea class="w-input message" placeholder="Enter your Message Here" id="message" name="cf_message"></textarea><br>
+
+           <input class="button medium" type="submit" value="Send">
+
+         </form>
+
+          <div class="w-form-done">
+
+              <p>Thank you! Your submission has been received!</p>
+
+            </div>
+
+            <div class="w-form-fail">
+
+              <p>Oops! Something went wrong while submitting the form :(</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+  </div>
+  
+  <div id="contact">
+
+    <div class="parallax-back"  data-stellar-background-ratio="0.5">
+      <div class="row-back">
+      <div class="w-container wrap">
+
+                  <div class="center">
+                    <h1 class="underline">Get in touch</h1>
+                    <p>Feel free to contact us at any time.</p>
                     <div class="social-footter">
                       <i class="facebookelegance-icons-"></i>
                       <i class="twitter-birdelegance-icons-"></i>
@@ -1257,13 +1025,12 @@
 
   </div>
 
-  <div class="w-widget w-widget-map contac-map" data-widget-latlng="37.782163,-122.400591" data-widget-style="roadmap" data-widget-zoom="25" data-widget-tooltip="Carino Headquater"></div>
 
 
 
 <!--///////////////////////////////////////////////////////
 
-       // End Contact section 
+       // End Order section 
 
        //////////////////////////////////////////////////////////-->
 
@@ -1278,7 +1045,7 @@
 
 
  <div class="footer row-back">
-  <div class="w-container wrap-normal center">© <strong>Carino Technologies</strong> 2014 - <span class="green">Exclusive</span> On Themeforest </div>
+  <div class="w-container wrap-normal center">© <strong>Bagget Ltd</strong> 2016 </div>
  </div>
 
        <!--///////////////////////////////////////////////////////
