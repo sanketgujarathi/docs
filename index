@@ -85,7 +85,7 @@ f
                 <a class="w-nav-link menu-li" href="index.html#quote">REQUEST A QUOTE</a>
                 <a class="w-nav-link menu-li" href="index.html#order">RENTING LUGGAGE</a>
                 <a class="w-nav-link menu-li" href="index.html#team">CONTACT US</a>
-                <a class="w-nav-link menu-li" href="shortcodes.html">FAQ</a>
+                <a class="w-nav-link menu-li" href="index.html#faq">FAQ</a>
 
               </nav>
               <!-- END NAVIGATION LINKS -->
@@ -180,7 +180,7 @@ f
 
             <div class="icon-box">
 
-              <i class="paramselegance-icons-"></i>
+              <i class="diamondelegance-icons-"></i>
 
               <h4 class="icons-heading">TRAVEL IN STYLE</h4>
 
@@ -504,13 +504,13 @@ f
 
                 <ul>
 
-                  <li>Cras dapibus vivamus elementum</li>
+                  <li>Four wheels</li>
 
-                  <li>Semper nisi aenean vulputate</li>
+                  <li>Number Lock</li>
 
-                  <li>Tellus aenean leo ligula porttitor</li>
+                  <li>Expandable Feature</li>
 
-                  <li>Consequat vitae eleifend ac enim</li>
+                  <li>Three pockets</li>
 
                 </ul>
 
@@ -542,13 +542,13 @@ f
 
                 <ul>
 
-                  <li>Cras dapibus vivamus elementum</li>
+                  <li>Four wheels</li>
 
-                  <li>Semper nisi aenean vulputate</li>
+                  <li>Combination Lock</li>
 
-                  <li>Tellus aenean leo ligula porttitor</li>
+                  <li>Expandable Feature</li>
 
-                  <li>Consequat vitae eleifend ac enim</li>
+                  <li>100% Polycarbonate</li>
 
                 </ul>
 
@@ -581,13 +581,13 @@ f
 
                 <ul>
 
-                  <li>Cras dapibus vivamus elementum</li>
+                  <li>Nylon Material</li>
 
-                  <li>Semper nisi aenean vulputate</li>
+                  <li>Adjustable suspension</li>
 
-                  <li>Tellus aenean leo ligula porttitor</li>
+                  <li>Zipper and Buckle Closure</li>
 
-                  <li>Consequat vitae eleifend ac enim</li>
+                  <li>Padded Hipbelt</li>
 
                 </ul>
 
@@ -619,13 +619,13 @@ f
 
                 <ul>
 
-                  <li>Cras dapibus vivamus elementum</li>
+                  <li>Two wheels</li>
 
-                  <li>Semper nisi aenean vulputate</li>
+                  <li>Water-Resistant Coated Polyester</li>
 
-                  <li>Tellus aenean leo ligula porttitor</li>
+                  <li>Two slip pockets</li>
 
-                  <li>Consequat vitae eleifend ac enim</li>
+                  <li>Lightweight</li>
 
                 </ul>
 
@@ -765,7 +765,7 @@ f
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
+              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
               <span>
                 <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
@@ -785,7 +785,7 @@ f
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
+              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
               <span>
                 <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
@@ -805,7 +805,7 @@ f
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
+              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
               <span>
                 <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
@@ -825,7 +825,7 @@ f
           <div class="team-album">
             <div class="tumbnail">
               <a class="team-hyper">
-              <img class="thumbnail-img" src="images/team/arvind.jpg" alt="team1">
+              <img class="thumbnail-img" src="images/team/image1.png" alt="team1">
               <span>
                 <h3 class="team-heading">Arvind Dolare</h3>
                 <p class="team-designation">CREATIVE DIRECTOR</p>
@@ -959,7 +959,113 @@ f
     </div>
 
   </div>
-  
+<div class="faq" id="faq">
+  <div class="row-gree">
+    <!-- START CONTAINER -->
+    <div class="w-container wrap-normal">
+      <div class="center">
+        <h1 class="underline">FAQ</h1>
+      </div>
+    </div>
+    <!-- END CONTAINER -->
+  </div>
+</div>
+<div class="row-back">
+  <!-- START CONTAINER -->
+  <div class="w-container wrap-normal">
+    <!-- START COLUNM 6 -->
+    <div class="w-col w-col-6">
+      <!-- START UNDERLINE DOTTED HEADING -->
+      <h4 class="underline-dotted">How do I sign up?</h4>
+	  <p>You can sign up on our website or  email us at hello@bagget.in</p>
+      <!-- END UNDERLINE DOTTED HEADING -->
+
+      <!-- START H1 HEADING -->
+      <h4 class="underline-dotted">How do I order?</h4>
+      <!-- END H1 HEADING -->
+      <p>You can order it online after making a payment.</p>
+      <!-- START H2 HEADING -->
+      <h4 class="underline-dotted">Why should I use Bagget instead of buying my own bags/suitcases?</h4>
+      <!-- END H2 HEADING -->
+      <p>It is cost-effective, convenient and hassle free. Whether you are travelling or relocating, renting bag from Bagget is the smart and flexible way.</p>
+	  <p>Some travel occasionally in a year, resulting in empty suitcases being stored for long periods, taking up valuable space</p>
+	  <p>Bagget saves you:</p>
+	  <ul>
+		<li>Trouble of storing bulky suitcases</li>
+		<li>Trouble of having suitcases that do not meet your specific needs at a given time.</li>
+	  </ul>
+	  <p>Bagget timeously delivers a state of the art suitcase of your choice to your doorstep, ready to pack and we collect it a day after your return ..</p>
+      <!-- START h4 HEADING -->
+      <h4 class="underline-dotted">How do I know that the suitcase/bag is safe to use?</h4>
+      <!-- END h4 HEADING -->
+      <p>Our customers’ safety and peace of mind is our priority. Your suitcase will meet all the security requirements. We only use suitcase brands trusted in the travel industry. They are expensive to buy, but customers get the benefit of a state of the art suitcase by using BAGGET.</p>
+      <!-- START H4 HEADING -->
+      <<h4 class="underline-dotted">Do I need to pick up the suitcase and then bring it back to BAGGET?</h4>
+      <!-- END H4 HEADING -->
+      <p>No, not at all! All you have to do is to book the suitcase that meets your requirements and we will deliver it to your doorstep at least 36 hours before your trip starts. On return from your trip we shall collect your suitcases within 24 hours.  Its hassle free and more convenient.</p>
+      <!-- START H5 HEADING -->
+      <h4 class="underline-dotted">Can I choose the delivery date and time?</h4>
+      <!-- END H5 HEADING -->
+      <p>Yes you can, provided there is availability of the bag, which would be confirmed to you by the sales team.</p>
+      <!-- START H6 HEADING -->
+      <h4 class="underline-dotted">How do I know the suitcases will be delivered on time?</h4>
+      <!-- END H6 HEADING -->
+      <p>Trust, loyalty and peace of mind is the core of our business. You can be rest assured that your suitcases will be delivered to your doorstep on time, providing enough time to pack, and it will be collected within a day after you have unpacked it</p>
+      <!-- START H6 HEADING -->
+      <h4 class="underline-dotted">Do I have to pay for deliveries and pick-ups?</h4>
+      <!-- END H6 HEADING -->
+      <p>All our deliveries and pickups are free of cost. So you do not need to pay anything apart from the rental charges.</p>
+    
+    </div>
+    <!-- END COLUMN 6 -->
+
+    <!-- START COLUNM 6 -->
+    <div class="w-col w-col-6">
+      <!-- START UNDERLINE DOTTED HEADING -->
+      <h4 class="underline-dotted">Can I cancel an order ?</h4>
+	  <p>Yes, if it has not been shipped out, you can cancel it.  Once shipped to a customer, the deposit will be forfeited.  To cancel please email CustomerService@bagget.in. Upon cancellation the Customer will receive an email confirmation and any subsequent rental charges will not be levied.</p>
+      <!-- END UNDERLINE DOTTED HEADING -->
+
+      <!-- START H1 HEADING -->
+      <h4 class="underline-dotted">Can I return bag/suitcase if I do not like it?</h4>
+      <!-- END H1 HEADING -->
+      <p>We supply top quality bags. However if you do not like the bag or no longer wish to make use of it, deposit will be  forfeited.</p>
+      <!-- START H2 HEADING -->
+      <h4 class="underline-dotted">What modes of payment you accept?</h4>
+      <!-- END H2 HEADING -->
+      <p>We accept all modes of payment viz; Credit Card / Debit Card / Online Transfer</p>
+      <!-- START h4 HEADING -->
+      <h4 class="underline-dotted">What brands do you offer on your site?</h4>
+      <!-- END h4 HEADING -->
+      <p>We offer top quality and best in industry bags/suitcases.
+Luggage bags : Samsonite, American Tourister, Safari, VIP, Skybags and many more.
+		</p>
+      <!-- START H4 HEADING -->
+      <<h4 class="underline-dotted">What condition are the bags in?</h4>
+      <!-- END H4 HEADING -->
+      <p>All of our bags are either brand new or in like new condition and all go through strict quality control checks before we allow them to be hired by customers.</p>
+      <!-- START H5 HEADING -->
+      <h4 class="underline-dotted">What happens if I want to extend the duration for which the bag have been rented?</h4>
+      <!-- END H5 HEADING -->
+      <p>If you want to extend the any of the bag which you have borrowed from us, simply e-mail us at admin@bagget.in and we will let you know if your particular bag is available and if so, quote you a price for the bag. The price will vary from bag to bag and will take into account its age and condition and its general availability. However certain bags may not be available depending on their exclusivity and rarity</p>
+      <!-- START H6 HEADING -->
+      <h4 class="underline-dotted">What happens if the bag I have borrowed becomes damaged or lost?</h4>
+      <!-- END H6 HEADING -->
+      <p>Lost bags - If the bag has been lost, you will be charged a replacement fee, which can vary depending on the item in question.</p>
+	  <p>Dirty or damaged bags - With regard to dirtied or damaged bags, once we have received your notification e-mail, we will ask you to return the bag to us immediately so that we can assess the extent of the damage. While assessing, we will take into account the length of time for which you had the bag and normal wear and tear commensurate with that length of usage. If damage beyond normal wear and tear has been suffered by the bag such that the bag becomes incapable of being repaired or restored to its original condition (fair wear and tear excepted), you will be charged a replacement fee. If we determine that the damaged bag is capable of being repaired or restored to its original condition (fair wear and tear excepted), you will, in our discretion, be charged a lesser amount instead of the applicable replacement fee for that bag</p>
+      <!-- START H6 HEADING -->
+      <h4 class="underline-dotted">Can I rent more than one bag at a time?</h4>
+      <!-- END H6 HEADING -->
+      <p>Yes, more than one bag can be rented at a time.</p>
+	  <!-- START H6 HEADING -->
+      <h4 class="underline-dotted">Can I but the bag?</h4>
+      <!-- END H6 HEADING -->
+      <p>Unfortunately, Bagget does not have a rent-to-own option. </p>
+    </div>
+    <!-- END COLUMN 6 -->
+  </div>
+  <!-- END CONTAINER -->
+</div>
   <div id="contact">
 
     <div class="parallax-back"  data-stellar-background-ratio="0.5">
