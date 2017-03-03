@@ -95,10 +95,14 @@ https://github.com/shashank88/system_design
 https://github.com/checkcheckzz/system-design-interview
 https://www.palantir.com/2011/09/how-to-ace-an-algorithms-interview/
 
+Coding Problems - 
+https://knaidu.gitbooks.io/problem-solving
+
 Creational Patterns -
 Builder - Build the object step-by-step, return same instance in every step. 
 			StringBuilder/StringBuffer, using the append() method, is an example of BuilderPattern. URI builder
 			http://www.codejava.net/coding/how-to-use-builder-pattern-for-designing-method-parameters
+			Extensively used in setup of junit tests,facilitates building objects to be tested selectively.
 Factory -  Provides method that return an implementation of an abstract/interface type. 
 			Calendar.getInstance(),SessionFactory.openSession(), Spring beanfactory is an example of Factory pattern
 AbstractFactory - Provides method that return the factory itself which in turn can be used to create another abstract/interface type.(Factory of factoryclasses)
@@ -117,10 +121,10 @@ Structural Patterns -
 Flyweight - Share data/returning a cached instance to save memory. string pool/Wrapper classes is example of Flyweight pattern.
 Decorator - take instance of same type and add additional behaviour. Wrapper classes is example of decorator.Response object class created from model class with added information of jaxb for marshalling
 Adapter  - take instance of another abstract/interface and acts as a convertor i.e. provides a new interface for an incompatible client. toString method
-Proxy - AOP, reflection
-Facade - 
+Proxy - Retuns implementation of type which internally users a delgations/uses a different implementation AOP, reflection
+Facade - Simplified abstraction layer
 Composite - 
-Bridge - 
+Bridge - The primary function of bridge pattern is to decouple an abstraction from its implementation.
 
 
 
@@ -318,6 +322,8 @@ What are the design patters used in project?
 Factory pattern - Multiple implementations of an abstract class present. Factory class return appropriate implementation depending on the message type given as input.
 Decorator pattern - Decorator class created from model class with added information of marshalling to entity beans to XML/JSON
 Adapter pattern - Bankapi provided a unified interface for number of underlying web services that provided various core banking functionalities
+Builder pattern - Build dom objects for xml
+context pattern - A context is a collection of data, often stored in a Map or a custom class which acts as a structure with accessors and modifiers. It is used for maintaining state and for sharing information within a system. Another example for it might be HttpSession object: you have a attributes which is basically a map with String keys and Object elements. This provides state information between http requests. Another example is ServletRequest which provides state information between Servlets.
 
 
 
@@ -405,6 +411,11 @@ what is second level cache
 how does it help
 is it enabled by default
 
+Criteria queries - 
+http://www.howtodoinjava.com/2014/10/28/hibernate-criteria-queries-tutorial-and-examples
+http://www.journaldev.com/2963/hibernate-criteria-examples-tutorial
+
+
 ***Maven***
 
 What are maven goals used to run the project?
@@ -491,7 +502,8 @@ rd.forward(request, response);
 Used for setup/initialization
 @After methods run after each @Test method
 Used for cleanup. For e.g. destroy ehcache manager. since only one is allowed in vm
-
+Mocking frameworks used - mockito and powermock
+Powermock allows mocking private methods by creating partial mocks
 
 ****JBPM****
 3.  What is JBPM?
@@ -571,7 +583,71 @@ Heap -
 		Old/Tenured gen -
 			Objects in eden move to the old generation when the objects you need to keep are bigger than the survivor space.
 			
+**************************Scalabitlity**********************
+How to make applications scalable?
+Following approches should be taken up one by one as workload increases
+1. Application server
+Multiple instances of application on identical servers behind a load balancer. This load balancer evenly balances load(requests)
+ on to your group of application servers. The request should always return the same results irrespective of the the server it landed on. Every server should run the same code and does not store any user-related data, like sessions on local disc or memory. Sessions need to be stored in a centralized data store which is accessible to all your application servers.
+ 
+2. Database
+Denormalize the database so that there are no more joins in any database query. Eventually use a nosql database. This will allow you to store terabytes of data without pain.
+
+3. Cache
+Store the result dataset of a query in a cache. A hash representation of your query is the cache key. The next time you run the same query first check if it is already in the cache.
+
+4. Asynchornism
+Use job queues using JMS like ActiveMQ
+
+
+*********************Messaging v/s Web Services*****************
+I will use web services when -
+1. Dealing with cross domain, typically services enironment when we are not sure of client technology
+2. Need synchronous response.
+	* If the server fails the client must take responsibilty to handle the error.
+	* When server is running again, client is responsible for resending the request.
+	* If the server sends a response and the client fails the operation is lost.
+	* You can expect immediate response from server, but the you can handle asynchronous calls too.
 	
+And pick up messaging when - 
+1. Message queues are ideal for request that take long time to process.
+2. High availability
+3. Confirmed delivery
+	* If the server fails the queue will store the message
+	* When the server is running again it will receive the pending messages.
+	* If the server gives respone to the client and the client fails and does not acknowledge the response the message is persisted.
+	
+*****************************Reg Ex*************************
+[ab] - Works as OR criteria. Matches single character a or b. [0-9a-fxA-FX] mathces a hexadecimal digit or the letter x.
+
+Boundariers-
+^ - Beginning of a line
+$ - End of a line
+. - any character
+
+Shorthands -
+/d : Numeric
+/w : Alphanumeric
+/s : Whitespace
+/D : [^/d] negation of number. Matches an alphabet
+/W : [^/w] negation of alphanumeric. Matches special character
+/S : [^/s] negation of whitespace. Matches alphanumeric character
+
+Limit occurences - 
+{x} : x occurences
+{x,y} : range x-y occurences
+{x,} : min x occurences
+* : 0 or more occurences
++ : 1 or more occurences
+? : 0 or 1 occurences i.e. optional
+
+\b : word boundaries. Used to match whole words E.g \bHello|World\b
+
+e.g. : \b(Get|GetValue|Set|SetValue)\b => \b(Get(Value)?|Set(Value)?)\b = \b((Get|Set)(Value)?)\b
+
+| : OR condition
+&& : intersection
+^ : negation
 
 ***************
 twitter bootstrap
@@ -619,6 +695,8 @@ https://www.mysliderule.com/learning-paths/android
 prototype
 https://marvelapp.com/
 Hosting
+freehostia
+redserver.in
 heroku
 Great templates
 http://html5up.net/
