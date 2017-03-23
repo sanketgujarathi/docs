@@ -98,6 +98,17 @@ https://www.palantir.com/2011/09/how-to-ace-an-algorithms-interview/
 Coding Problems - 
 https://knaidu.gitbooks.io/problem-solving
 
+http://freelancertestbd.blogspot.in/2015/04/odesk-ajax-test-answer-2015_15.html
+http://upworktest.in/upwork-internet-programming/ajax-test-2016/
+http://www.interviewcake.com/all-questions
+http://www.interviewkickstart.com/
+Cracking the Coding Interview 
+free question a week from InterviewCake though.
+
+codewars
+
+https://www.careercup.com/page?pid=coding-interview-questions
+
 Creational Patterns -
 Builder - Build the object step-by-step, return same instance in every step. 
 			StringBuilder/StringBuffer, using the append() method, is an example of BuilderPattern. URI builder
