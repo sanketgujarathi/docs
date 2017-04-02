@@ -231,6 +231,9 @@ Tomcat is a Servlet/JSP container. It is free. It does not support the Java EE 6
 WebLogic Server is a fully loaded EJB container. It has the best server and database connection pooling features in the market. It is easy to build/deploy/debug apps on Weblogic. It's a commercial product and quite expensive at that.
 EJB container provide security, transaction management, object pooling features
 
+Difference EJB and Spring /Are EJB/Spring different implementations of Java EE?- 
+No, as said, EJB is part of Java EE. Spring is a standalone framework which substitutes and improves many parts of Java EE. Spring doesn't necessarily require Java EE to run. A barebones servletcontainer like Tomcat is already sufficient. Simply put, Spring is a competitor of Java EE. E.g. "Spring" (standalone) competes EJB/JTA, Spring MVC competes JSF/JAX-RS, Spring DI/IoC/AOP competes CDI, Spring Security competes JAAS/JASPIC, etc
+
 ***Threading***
 ThreadLocal - Each thread has its own copy. Static, final (Not mandatory, but recommended). Usually used with Singleton beans.
 
