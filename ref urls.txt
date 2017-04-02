@@ -225,6 +225,12 @@ System.out.println(e==f);//true
 
 Example of static inner class - Used for creating a Rowmapper for using with spring jdbc template.
 
+Difference between Tomcat and Weblogic server - 
+Tomcat is a Servlet/JSP container. It is free. It does not support the Java EE 6 container features such as EJB/JPA out of the box. These can be integrated but will not be equivalent to a proper EJB container.
+
+WebLogic Server is a fully loaded EJB container. It has the best server and database connection pooling features in the market. It is easy to build/deploy/debug apps on Weblogic. It's a commercial product and quite expensive at that.
+EJB container provide security, transaction management, object pooling features
+
 ***Threading***
 ThreadLocal - Each thread has its own copy. Static, final (Not mandatory, but recommended). Usually used with Singleton beans.
 
