@@ -31,7 +31,7 @@ http://www.baeldung.com/persistence-with-spring-series/
 http://www.hibernate-training-guide.com/hibernate-example.html
 
 spring-integration
-https://dzone.cpm/articles/dont-use-jmstemplate-spring
+https://dzone.com/articles/dont-use-jmstemplate-spring
 How annotation based bean config works illustration
 http://stackoverflow.com/questions/7414794/difference-between-contextannotation-config-vs-contextcomponent-scan
 
@@ -50,6 +50,8 @@ blogs
 http://dandreamsofcoding.com/2015/01/05/java-quirks-and-interview-gotchas/
 https://www.voxxed.com/blog/2015/01/not-fathers-java-opinionated-guide-modern-java-development-part-1/
 http://blog.paralleluniverse.co/2014/05/01/modern-java
+https://github.com/kdn251/interviews
+
 Spring JDBCTemplate - 
 http://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/jdbc.html
 
@@ -86,11 +88,15 @@ http://howtodoinjava.com/2012/10/09/how-hashmap-works-in-java/
 
 Java8
 http://winterbe.com/posts/2014/03/16/java-8-tutorial/
+https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood
+https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html
+https://www.callicoder.com/java-8-optional-tutorial/
+
 
 Scale Java apps - 
 http://stackoverflow.com/questions/36755884/how-do-i-scale-a-java-app-with-a-rest-api-and-a-database
 
-System design - 
+System Design - 
 https://github.com/shashank88/system_design
 https://github.com/checkcheckzz/system-design-interview
 https://www.palantir.com/2011/09/how-to-ace-an-algorithms-interview/
@@ -109,11 +115,25 @@ codewars
 
 https://www.careercup.com/page?pid=coding-interview-questions
 
+
+
+NoSQL - 
+https://martinfowler.com/artcles/nosqlKeyPoints.html
+https://www.codementor.io/jadianes/building-a-recommender-with-apache-spark-python-example-app-part1-du1083qbw
+Real world mapreduce example
+https://blog.matthewrathbone.com/2013/02/09/real-world-hadoop-implementing-a-left-outer-join-hadoop-map-reduce.html
+
+GIT
+https://longair.net/blog/2009/04/16/git-fetch-and-merge/
+
+Data Science
+https://www.analyticsvidhya.com/blog/2016/05/learning-path-turning-web-developer-professional-data-scientist/
+
 Creational Patterns -
 Builder - Build the object step-by-step, return same instance in every step. 
 			StringBuilder/StringBuffer, using the append() method, is an example of BuilderPattern. URI builder
 			http://www.codejava.net/coding/how-to-use-builder-pattern-for-designing-method-parameters
-			Extensively used in setup of junit tests,facilitates building objects to be tested selectively.
+			Extensively used in setup of junit tests,facilitate building objects to be tested selectively. Improves testability.
 Factory -  Provides method that return an implementation of an abstract/interface type. 
 			Calendar.getInstance(),SessionFactory.openSession(), Spring beanfactory is an example of Factory pattern
 AbstractFactory - Provides method that return the factory itself which in turn can be used to create another abstract/interface type.(Factory of factoryclasses)
@@ -132,12 +152,13 @@ Structural Patterns -
 Flyweight - Share data/returning a cached instance to save memory. string pool/Wrapper classes is example of Flyweight pattern.
 Decorator - take instance of same type and add additional behaviour. Wrapper classes is example of decorator.Response object class created from model class with added information of jaxb for marshalling
 Adapter  - take instance of another abstract/interface and acts as a convertor i.e. provides a new interface for an incompatible client. toString method
-Proxy - Retuns implementation of type which internally users a delgations/uses a different implementation AOP, reflection
+Proxy - Returns implementation of type which internally delegates/uses a different implementation AOP, reflection
 Facade - Simplified abstraction layer
 Composite - 
 Bridge - The primary function of bridge pattern is to decouple an abstraction from its implementation.
 
-
+Differences between patterns - 
+A builder is used when you need to do lot of things to build an object. A factory is used when the facatory can easily create the entire object within one method call.
 
 Data structure
 https://ece.uwaterloo.ca/~dwharder/aads/
