@@ -92,6 +92,7 @@ https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood
 https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html
 https://www.callicoder.com/java-8-optional-tutorial/
 https://medium.com/@tagir_valeev/use-stream-api-simpler-or-dont-use-it-at-all-ea0a44a4b1ff
+https://blog.jetbrains.com/upsource/2016/08/03/what-to-look-for-in-java-8-code/
 
 
 Scale Java apps - 
