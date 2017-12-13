@@ -775,3 +775,5 @@ ECG reg testing for blackduck
 **************************************Angular************************************
 https://github.com/angular/angular-cli/wiki
 https://www.ibm.com/developerworks/library/wa-implement-a-single-page-application-with-angular2/index.html
+https://www.sitepoint.com/ultimate-angular-cli-reference/
+https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/
