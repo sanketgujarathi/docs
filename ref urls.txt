@@ -770,3 +770,8 @@ CDS queries
 Jiras - completed while being on prod support 
 es perf fix
 ECG reg testing for blackduck
+
+
+**************************************Angular************************************
+https://github.com/angular/angular-cli/wiki
+https://www.ibm.com/developerworks/library/wa-implement-a-single-page-application-with-angular2/index.html
