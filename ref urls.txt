@@ -777,3 +777,23 @@ https://github.com/angular/angular-cli/wiki
 https://www.ibm.com/developerworks/library/wa-implement-a-single-page-application-with-angular2/index.html
 https://www.sitepoint.com/ultimate-angular-cli-reference/
 https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/
+
+
+
+************************************JSON**************************************
+{
+  "array": [
+    1,
+    2,
+    3
+  ],
+  "boolean": true,
+  "null": null,
+  "number": 123,
+  "object": {
+    "a": "b",
+    "c": "d",
+    "e": "f"
+  },
+  "string": "Hello World"
+}
