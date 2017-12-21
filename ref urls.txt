@@ -780,6 +780,7 @@ https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/
 https://material.angular.io/components
 https://www.typescriptlang.org/docs/handbook/basic-types.html
 
+https://angularfirebase.com/lessons/desktop-apps-with-electron-and-angular/ (desktop app using angular and electron)
 ***********************************Dummy Apis**********************************
 https://jsonplaceholder.typicode.com/photos (provides dummy JSON data)
 
