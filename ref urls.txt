@@ -778,6 +778,7 @@ https://www.ibm.com/developerworks/library/wa-implement-a-single-page-applicatio
 https://www.sitepoint.com/ultimate-angular-cli-reference/
 https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/
 https://material.angular.io/components
+https://www.typescriptlang.org/docs/handbook/basic-types.html
 
 ***********************************Dummy Apis**********************************
 https://jsonplaceholder.typicode.com/photos (provides dummy JSON data)
