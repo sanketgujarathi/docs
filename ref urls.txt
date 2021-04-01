@@ -8,7 +8,6 @@ cs.lmu.edu/~ray/notes/jw/
 
 Best java websites and blogs
 http://www.baeldung.com/java-blogs
-
 http://www.xyzws.com/javafaq/page/1
 http://javaconceptoftheday.com/
 
@@ -21,6 +20,8 @@ http://khaidoan.wikidot.com/xpath
 
 Maven
 http://www.javahotchocolate.com/notes/maven.html
+Maven Best Practices
+https://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html	
 
 Sample MVC application
 http://www.journaldev.com/2552/spring-restful-web-service-example-with-json-jackson-and-client-program
@@ -32,6 +33,7 @@ http://www.hibernate-training-guide.com/hibernate-example.html
 
 spring-integration
 https://dzone.com/articles/dont-use-jmstemplate-spring
+
 How annotation based bean config works illustration
 http://stackoverflow.com/questions/7414794/difference-between-contextannotation-config-vs-contextcomponent-scan
 
@@ -51,6 +53,9 @@ http://dandreamsofcoding.com/2015/01/05/java-quirks-and-interview-gotchas/
 https://www.voxxed.com/blog/2015/01/not-fathers-java-opinionated-guide-modern-java-development-part-1/
 http://blog.paralleluniverse.co/2014/05/01/modern-java
 https://github.com/kdn251/interviews
+https://dzone.com/articles/4-more-techniques-for-writing-better-java
+https://4comprehension.com/
+https://medium.com/basecs
 
 Spring JDBCTemplate - 
 http://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/jdbc.html
@@ -59,6 +64,7 @@ JAXB -
 http://www.vogella.com/tutorials/JAXB/article.html
 
 Volatile -
+https://www.ibm.com/developerworks/java/library/j-jtp06197/
 http://www.javamex.com/tutorials/synchronization_volatile.shtml
 Volatile should not be used for read-update-write scenario. It cannot prevent lost update
 
@@ -72,12 +78,15 @@ https://redstack.wordpress.com/2011/01/06/visualising-garbage-collection-in-the-
 http://www.insightfullogic.com/2013/Mar/06/garbage-collection-java-2/
 https://blogs.msdn.microsoft.com/abhinaba/2009/03/02/back-to-basics-generational-garbage-collection/
 http://onoffswitch.net/toy-generational-garbage-collector/
+https://stackoverflow.com/questions/10695298/java-gc-why-two-survivor-regions
+https://plumbr.io/handbook/garbage-collection-in-java
 
 Annotations - 
 https://deors.wordpress.com/2011/09/26/annotation-types/
 
 Spring Transactions - 
 http://blog.jhades.org/how-does-spring-transactional-really-work/
+https://www.byteslounge.com/tutorials/spring-transaction-isolation-tutorial
 
 All about Generics - 
 http://javaconceptoftheday.com/why-we-need-generics-in-java/
@@ -88,11 +97,15 @@ http://howtodoinjava.com/2012/10/09/how-hashmap-works-in-java/
 
 Java8
 http://winterbe.com/posts/2014/03/16/java-8-tutorial/
+https://github.com/BafS/Java8-CheatSheet
 https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood
 https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html
 https://www.callicoder.com/java-8-optional-tutorial/
 https://medium.com/@tagir_valeev/use-stream-api-simpler-or-dont-use-it-at-all-ea0a44a4b1ff
 https://blog.jetbrains.com/upsource/2016/08/03/what-to-look-for-in-java-8-code/
+https://www.deadcoderising.com/java-8-no-more-loops/
+https://www.deadcoderising.com/2017-02-14-java-8-declarative-ways-of-modifying-a-map-using-compute-merge-and-replace/
+http://www.r-5.org/files/books/computers/languages/java/style/Venkat_Subramaniam-Functional_Programming_in_Java-EN.pdf
 
 
 Scale Java apps - 
@@ -102,6 +115,10 @@ System Design -
 https://github.com/shashank88/system_design
 https://github.com/checkcheckzz/system-design-interview
 https://www.palantir.com/2011/09/how-to-ace-an-algorithms-interview/
+https://www3.cs.stonybrook.edu/~algorith/video-lectures/
+https://leetcode.com/discuss/career/229177/My-System-Design-Template
+https://github.com/donnemartin/system-design-primer
+http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html
 
 Coding Problems - 
 https://knaidu.gitbooks.io/problem-solving
